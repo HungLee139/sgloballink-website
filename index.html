@@ -60,7 +60,19 @@
   .sgl-row { display: flex; gap: 14px; align-items: baseline; flex-wrap: wrap; }
   .sgl-row-k { width: 92px; flex: none; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #17A9A9; }
 
+  .sgl-plat-sec { padding: 0 40px 8px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .sgl-plats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; padding-bottom: 34px; }
+  .sgl-plat { display: flex; flex-direction: column; gap: 8px; padding: 22px 24px; border-radius: 14px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); color: inherit; transition: all 200ms cubic-bezier(0.22,0.61,0.36,1); }
+  .sgl-plat:hover { color: inherit; background: rgba(255,255,255,0.06); border-color: rgba(46,138,212,0.5); transform: translateY(-3px); }
+  .sgl-plat:focus-visible { outline: 2px solid #4FC7C4; outline-offset: 2px; }
+  .sgl-plat-n { display: flex; align-items: center; gap: 10px; font-size: 26px; font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF; }
+  .sgl-plat-dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+  .sgl-plat-d { font-size: 14px; line-height: 1.5; color: #A9B9C9; }
+  .sgl-plat-go { margin-top: 4px; font-size: 13px; font-weight: 600; color: #4FA3E3; }
+
   @media (max-width: 1000px) {
+    .sgl-plats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .sgl-plat-sec { padding: 0 24px 8px; }
     .sgl-navlinks { display: none; }
     .sgl-g-hero { grid-template-columns: minmax(0, 1fr); }
     .sgl-g2 { grid-template-columns: minmax(0, 1fr); gap: 20px; }
@@ -72,6 +84,8 @@
     .sgl-sec { padding: 80px 24px; }
   }
   @media (max-width: 620px) {
+    .sgl-plats { grid-template-columns: minmax(0, 1fr); }
+    .sgl-plat-sec { padding: 0 16px 8px; }
     .sgl-g3, .sgl-g4, .sgl-facts { grid-template-columns: minmax(0, 1fr); }
     .sgl-fact { border-left: 0; padding: 22px 0; border-top: 1px solid rgba(255,255,255,0.06); }
     .sgl-fact:first-child { border-top: 0; }
@@ -120,7 +134,7 @@
         <div style="height: 3px; width: 140px; background: linear-gradient(90deg, #17A9A9, #1B75BC 60%, #F5821F)"></div>
         <div class="sgl-eyebrow"><span data-t="en">Market research · Marketplace operations</span><span data-t="vi">Nghiên cứu thị trường · Vận hành thương mại điện tử</span></div>
         <h1 class="sgl-h1"><span data-t="en">We run e&#8209;commerce operations for brands selling <span style="color: #2E8AD4">across borders</span>.</span><span data-t="vi">Vận hành thương mại điện tử cho doanh nghiệp bán hàng <span style="color: #2E8AD4">xuyên biên giới</span>.</span></h1>
-        <p style="margin: 0; max-width: 580px; font-size: 19px; line-height: 1.7; color: #A9B9C9"><span data-t="en">S Global Link is a service company based in Da Nang, Vietnam. We research products and markets, then run the day-to-day work on Amazon, Walmart and Shopify: catalog, advertising, inventory and reporting.</span><span data-t="vi">S Global Link là công ty dịch vụ đặt tại Đà Nẵng. Chúng tôi nghiên cứu sản phẩm và thị trường, sau đó vận hành công việc hằng ngày trên Amazon, Walmart và Shopify: danh mục sản phẩm, quảng cáo, tồn kho và báo cáo.</span></p>
+        <p style="margin: 0; max-width: 580px; font-size: 19px; line-height: 1.7; color: #A9B9C9"><span data-t="en">S Global Link is a service company based in Da Nang, Vietnam. We research products and markets, then run the day-to-day work on Amazon, Walmart, Shopify and Wayfair: catalog, advertising, inventory and reporting.</span><span data-t="vi">S Global Link là công ty dịch vụ đặt tại Đà Nẵng. Chúng tôi nghiên cứu sản phẩm và thị trường, sau đó vận hành công việc hằng ngày trên Amazon, Walmart, Shopify và Wayfair: danh mục sản phẩm, quảng cáo, tồn kho và báo cáo.</span></p>
         <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-top: 6px">
           <a href="#services" class="sgl-btn"><span data-t="en">Our services</span><span data-t="vi">Dịch vụ của chúng tôi</span></a>
           <a href="#approach" class="sgl-btn-ghost"><span data-t="en">How we work</span><span data-t="vi">Cách chúng tôi làm việc</span></a>
@@ -151,23 +165,30 @@
     </div>
   </section>
 
-  <section style="padding: 0 40px">
-    <div class="sgl-wrap sgl-facts">
-      <div class="sgl-fact">
-        <div class="sgl-fact-v">Amazon · Walmart · Shopify</div>
-        <div class="sgl-eyebrow"><span data-t="en">Platforms we operate on</span><span data-t="vi">Nền tảng vận hành</span></div>
-      </div>
-      <div class="sgl-fact">
-        <div class="sgl-fact-v"><span data-t="en">United States</span><span data-t="vi">Hoa Kỳ</span></div>
-        <div class="sgl-eyebrow"><span data-t="en">Primary market</span><span data-t="vi">Thị trường chính</span></div>
-      </div>
-      <div class="sgl-fact">
-        <div class="sgl-fact-v"><span data-t="en">Da Nang, Vietnam</span><span data-t="vi">Đà Nẵng, Việt Nam</span></div>
-        <div class="sgl-eyebrow"><span data-t="en">Operations hub</span><span data-t="vi">Trung tâm vận hành</span></div>
-      </div>
-      <div class="sgl-fact">
-        <div class="sgl-fact-v"><span data-t="en">English · Vietnamese</span><span data-t="vi">Tiếng Anh · Tiếng Việt</span></div>
-        <div class="sgl-eyebrow" style="color: #F5821F"><span data-t="en">Working languages</span><span data-t="vi">Ngôn ngữ làm việc</span></div>
+  <section class="sgl-plat-sec" aria-label="Platforms">
+    <div class="sgl-wrap">
+      <div class="sgl-eyebrow" style="padding: 30px 0 18px"><span data-t="en">Platforms we operate on</span><span data-t="vi">Nền tảng chúng tôi vận hành</span></div>
+      <div class="sgl-plats">
+      <a class="sgl-plat" href="https://sell.amazon.com/" target="_blank" rel="noopener">
+        <div class="sgl-plat-n"><span aria-hidden="true" class="sgl-plat-dot" style="background: #F5821F"></span>Amazon</div>
+        <div class="sgl-plat-d"><span data-t="en">Seller Central · Sponsored Ads</span><span data-t="vi">Seller Central · Quảng cáo Sponsored</span></div>
+        <div class="sgl-plat-go"><span data-t="en">Seller site</span><span data-t="vi">Trang bán hàng</span> <span aria-hidden="true">↗</span></div>
+      </a>
+      <a class="sgl-plat" href="https://marketplace.walmart.com/" target="_blank" rel="noopener">
+        <div class="sgl-plat-n"><span aria-hidden="true" class="sgl-plat-dot" style="background: #2E8AD4"></span>Walmart</div>
+        <div class="sgl-plat-d"><span data-t="en">Marketplace · Walmart Connect</span><span data-t="vi">Marketplace · Walmart Connect</span></div>
+        <div class="sgl-plat-go"><span data-t="en">Seller site</span><span data-t="vi">Trang bán hàng</span> <span aria-hidden="true">↗</span></div>
+      </a>
+      <a class="sgl-plat" href="https://www.shopify.com/" target="_blank" rel="noopener">
+        <div class="sgl-plat-n"><span aria-hidden="true" class="sgl-plat-dot" style="background: #4FC7C4"></span>Shopify</div>
+        <div class="sgl-plat-d"><span data-t="en">Direct-to-consumer storefronts</span><span data-t="vi">Cửa hàng bán trực tiếp cho khách</span></div>
+        <div class="sgl-plat-go"><span data-t="en">Seller site</span><span data-t="vi">Trang bán hàng</span> <span aria-hidden="true">↗</span></div>
+      </a>
+      <a class="sgl-plat" href="https://partners.wayfair.com/" target="_blank" rel="noopener">
+        <div class="sgl-plat-n"><span aria-hidden="true" class="sgl-plat-dot" style="background: #A6CBEA"></span>Wayfair</div>
+        <div class="sgl-plat-d"><span data-t="en">Home goods supplier channel</span><span data-t="vi">Kênh nhà cung cấp hàng gia dụng</span></div>
+        <div class="sgl-plat-go"><span data-t="en">Seller site</span><span data-t="vi">Trang bán hàng</span> <span aria-hidden="true">↗</span></div>
+      </a>
       </div>
     </div>
   </section>
@@ -358,7 +379,7 @@
         <div style="font-size: 13px; color: #8A9BAD"><span data-t="en">© 2026 S Global Link Co., Ltd. · 36 Tran Xuan Le, Thanh Khe, Da Nang, Vietnam</span><span data-t="vi">© 2026 Công ty TNHH TM&amp;DV S Global Link · 36 Trần Xuân Lê, Thanh Khê, Đà Nẵng</span></div>
       </div>
       <div style="font-size: 13px"><a href="privacy.html" style="color: #A9B9C9; text-decoration: underline; text-underline-offset: 3px"><span data-t="en">Privacy Policy</span><span data-t="vi">Chính sách bảo mật</span></a></div>
-      <div style="font-size: 12px; line-height: 1.6; color: #8A9BAD"><span data-t="en">Amazon, Walmart and Shopify are trademarks of their respective owners. S Global Link is an independent service provider and is not affiliated with or endorsed by these companies.</span><span data-t="vi">Amazon, Walmart và Shopify là nhãn hiệu của các chủ sở hữu tương ứng. S Global Link là đơn vị cung cấp dịch vụ độc lập, không trực thuộc và không được các công ty này bảo trợ.</span></div>
+      <div style="font-size: 12px; line-height: 1.6; color: #8A9BAD"><span data-t="en">Amazon, Walmart, Shopify and Wayfair are trademarks of their respective owners. S Global Link is an independent service provider and is not affiliated with or endorsed by these companies.</span><span data-t="vi">Amazon, Walmart, Shopify và Wayfair là nhãn hiệu của các chủ sở hữu tương ứng. S Global Link là đơn vị cung cấp dịch vụ độc lập, không trực thuộc và không được các công ty này bảo trợ.</span></div>
     </div>
   </footer>
 

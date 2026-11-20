@@ -123,6 +123,34 @@ a{color:inherit}
 .svc li:hover h3{color:var(--ink)}
 .svc li:hover{padding-left:16px}
 .float{position:absolute;left:0;top:0;width:min(380px,30vw);aspect-ratio:4/3;border-radius:6px;overflow:hidden;pointer-events:none;z-index:5;opacity:0;transform:scale(.7);background:#fff;border:1px solid var(--rule);box-shadow:0 34px 60px -30px rgba(14,26,43,.38)}
+/* services: stacked deck (desktop) */
+.svc-stage{display:none}
+.svc-idx{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.svc-idx li{display:flex;gap:16px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--rule);cursor:pointer;color:var(--ink-3);font:600 17px/1.3 var(--f-display);letter-spacing:-.01em;transition:color .4s var(--ease),padding-left .5s var(--ease)}
+.svc-idx li:hover{color:var(--ink-2)}
+.svc-idx li .n{font:500 12px var(--f-mono);letter-spacing:.04em;transition:color .4s var(--ease)}
+.svc-idx li.on{color:var(--ink);padding-left:14px}
+.svc-idx li.on .n{color:var(--orange)}
+.svc-count{display:flex;align-items:flex-end;gap:10px;margin-bottom:28px;overflow:hidden}
+.svc-count b{display:block;font:800 clamp(84px,9vw,136px)/.82 var(--f-display);letter-spacing:-.06em;color:var(--ink)}
+.svc-count small{font:500 14px var(--f-mono);color:var(--ink-3);padding-bottom:10px}
+.svc-bar{height:2px;background:var(--rule);margin-top:22px;overflow:hidden}
+.svc-bar i{display:block;height:100%;background:var(--orange);transform-origin:0 50%;transform:scaleX(0)}
+.deck{position:relative;height:min(62vh,520px);margin-top:44px}
+.card{position:absolute;inset:0;background:#fff;border:1px solid var(--rule);border-radius:14px;box-shadow:0 40px 70px -46px rgba(14,26,43,.45);padding:clamp(24px,2.4vw,36px);display:grid;grid-template-rows:auto minmax(0,1fr);gap:18px;transform-origin:50% 0;will-change:transform;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:var(--orange);transform:scaleX(var(--k,0));transform-origin:0 50%;transition:transform .8s var(--ease)}
+.card.on::before{--k:1}
+.card .ct{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 18px}
+.card .n{font:500 13px var(--f-mono);color:var(--orange);padding-top:9px}
+.card h3{font:700 clamp(26px,2.5vw,36px)/1.05 var(--f-display);letter-spacing:-.03em;margin:0}
+.card p{grid-column:2;margin:0;color:var(--ink-2);font-size:16px;max-width:54ch}
+.card .cv{min-height:0;border-top:1px solid var(--rule);padding-top:10px;display:flex;justify-content:center}
+.card .cv .viz{height:100%;width:auto;max-width:100%}
+@media (min-width:981px){
+  .deck-on .svc{display:none}
+  .deck-on .svc-stage{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);gap:clamp(32px,4.5vw,72px);align-items:center;height:100vh;height:100svh;padding-top:64px;box-sizing:border-box}
+}
+
 /* service illustrations */
 .viz{width:100%;height:100%;display:block;font-family:var(--f-mono)}
 .viz .lb{font-size:11px;letter-spacing:.08em;fill:var(--ink-2)}
@@ -605,6 +633,45 @@ a{color:inherit}
     });
     svc.addEventListener('pointerleave',function(){gsap.to(fl,{opacity:0,scale:.7,duration:.4,ease:'power2.in'});shown=false;cur=-1;});
     gsap.from('#svc li',{y:30,opacity:0,duration:1,ease:EASE,stagger:.07,scrollTrigger:{trigger:'#svc',start:'top 82%',once:true}});
+  })();
+
+  /* 17b services: stacked deck on desktop */
+  (function(){
+    var sec=document.getElementById('services'), lis=[].slice.call(svc.querySelectorAll('li')), n=lis.length;
+    var stage=document.createElement('div'); stage.className='svc-stage';
+    var two=function(i){return (i<9?'0':'')+(i+1);};
+    stage.innerHTML='<div class="svc-left"><div class="svc-count"><b id="svcNum">01</b><small>/ '+two(n-1)+'</small></div><ol class="svc-idx">'+
+      lis.map(function(li,i){return '<li data-i="'+i+'"><span class="n">'+two(i)+'</span><span>'+li.querySelector('h3').innerHTML+'</span></li>';}).join('')+
+      '</ol><div class="svc-bar"><i id="svcBar"></i></div></div><div class="deck">'+
+      lis.map(function(li,i){return '<article class="card" data-i="'+i+'"><div class="ct"><span class="n">'+two(i)+'</span><h3>'+li.querySelector('h3').innerHTML+'</h3><p>'+li.querySelector('p').innerHTML+'</p></div><div class="cv">'+VIZ[i]+'</div></article>';}).join('')+'</div>';
+    svc.parentNode.insertBefore(stage,svc.nextSibling);
+    var cards=[].slice.call(stage.querySelectorAll('.card')), idx=[].slice.call(stage.querySelectorAll('.svc-idx li')), num=document.getElementById('svcNum'), cur=-1, tl=null;
+    function play(i){
+      if(i===cur) return; var first=cur<0; cur=i;
+      cards[i].querySelector('.cv').innerHTML=VIZ[i];
+      cards.forEach(function(c,k){c.classList.toggle('on',k===i);});
+      idx.forEach(function(el,k){el.classList.toggle('on',k===i);});
+      num.textContent=two(i);
+      if(!first) gsap.fromTo(num,{yPercent:60,opacity:0},{yPercent:0,opacity:1,duration:.55,ease:EASE});
+    }
+    idx.forEach(function(el,i){el.addEventListener('click',function(){
+      if(!tl) return; var st=tl.scrollTrigger; window.scrollTo({top:st.start+(st.end-st.start)*i/(n-1)+2,behavior:'smooth'});
+    });});
+    var mm=gsap.matchMedia();
+    mm.add('(min-width:981px)',function(){
+      sec.classList.add('deck-on');
+      gsap.set(cards,{yPercent:function(i){return i?118:0;}});
+      ScrollTrigger.create({trigger:stage,start:'top 75%',once:true,onEnter:function(){cur=-1;play(0);}});
+      tl=gsap.timeline({scrollTrigger:{trigger:stage,start:'top top',end:function(){return '+='+Math.round((n-1)*window.innerHeight*.8);},pin:true,scrub:.6,invalidateOnRefresh:true,snap:{snapTo:1/(n-1),duration:{min:.25,max:.7},delay:.08,ease:'power2.inOut'},
+        onUpdate:function(s){gsap.set('#svcBar',{scaleX:s.progress});play(Math.min(n-1,Math.round(s.progress*(n-1))));}}});
+      for(let i=1;i<n;i++){
+        tl.to(cards[i],{yPercent:0,ease:'power1.inOut',duration:1},i-1);
+        tl.to(cards.slice(0,i),{scale:function(k){return 1-(i-k)*.05;},y:function(k){return -(i-k)*22;},ease:'power1.inOut',duration:1},i-1);
+        tl.to(cards[i-1].querySelector('.ct'),{opacity:.25,ease:'none',duration:.6},i-.6);
+        tl.to(cards[i-1].querySelector('.cv'),{opacity:.15,ease:'none',duration:.6},i-.6);
+      }
+      return function(){sec.classList.remove('deck-on');tl=null;gsap.set(cards,{clearProps:'all'});cards.forEach(function(c){gsap.set(c.querySelectorAll('.ct,.cv'),{clearProps:'opacity'});});};
+    });
   })();
 
   /* 03 horizontal approach */

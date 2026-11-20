@@ -4,463 +4,711 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>S Global Link | Market research and e-commerce operations</title>
-<meta name="description" content="S Global Link is a service company in Da Nang, Vietnam, providing market research and marketplace operations on Amazon, Walmart and Shopify for brands selling across borders.">
+<meta name="description" content="S Global Link is a service company in Da Nang, Vietnam, providing market research and marketplace operations on Amazon, Walmart, Shopify and Wayfair for brands selling across borders.">
 <link rel="canonical" href="https://www.sgloballink.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="S Global Link | Market research and e-commerce operations">
-<meta property="og:description" content="S Global Link is a service company in Da Nang, Vietnam, providing market research and marketplace operations on Amazon, Walmart and Shopify for brands selling across borders.">
+<meta property="og:description" content="Market research and marketplace operations for brands selling across borders. Based in Da Nang, Vietnam.">
 <meta property="og:url" content="https://www.sgloballink.com/">
-<meta property="og:image" content="https://www.sgloballink.com/assets/sgl-logo-white.png">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%231B75BC%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%3ES%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%230E1A2B%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%3ES%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Be+Vietnam+Pro:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* SGL v2 — giấy trắng + mực navy theo logo chấm bi, một màu nhấn xanh thương hiệu, cam chỉ cho tuyến hàng */
+:root{
+  --paper:#FFFFFF; --paper-2:#F2F4F7; --ink:#0E1A2B; --ink-2:#56627A; --ink-3:#8A94A6; --rule:#DFE3EA;
+  --blue:#1B75BC; --blue-soft:rgba(27,117,188,.10); --orange:#F5821F;
+  --f-display:"Bricolage Grotesque","Be Vietnam Pro",system-ui,sans-serif;
+  --f-body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --gut:max(20px,4vw);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1320px;margin:0 auto;padding-left:var(--gut);padding-right:var(--gut)}
+.mono{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+[data-t="vi"]{display:none}
+[data-lang="vi"] [data-t="vi"]{display:revert}
+[data-lang="vi"] [data-t="en"]{display:none}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.88);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .4s var(--ease)}
+.nav.scrolled{border-bottom-color:var(--rule)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+.logo img{height:34px;width:auto}
+.nav-links{display:flex;gap:30px;font-size:15px;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--ink-2);transition:color .3s var(--ease)}
+.nav-links a:hover{color:var(--ink)}
+.nav-r{display:flex;align-items:center;gap:14px}
+.lang{display:flex;align-items:center;gap:4px}
+.lang button{border:0;background:transparent;font:600 13px var(--f-body);letter-spacing:.06em;color:#9AA3AF;padding:8px 7px;cursor:pointer;position:relative;transition:color .3s var(--ease)}
+.lang button+button::before{content:"";position:absolute;left:-3px;top:50%;width:1px;height:12px;background:var(--rule);transform:translateY(-50%)}
+.lang button::after{content:"";position:absolute;left:50%;bottom:1px;width:4px;height:4px;border-radius:50%;background:var(--orange);transform:translateX(-50%) scale(0);transition:transform .35s var(--ease)}
+.lang button:hover{color:var(--ink)}
+[data-lang="en"] [data-lang-btn="en"],[data-lang="vi"] [data-lang-btn="vi"]{color:var(--ink)}
+[data-lang="en"] [data-lang-btn="en"]::after,[data-lang="vi"] [data-lang-btn="vi"]::after{transform:translateX(-50%) scale(1)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 15px var(--f-body);text-decoration:none;color:#fff;background:var(--ink);padding:14px 22px;border-radius:999px;position:relative;overflow:hidden;isolation:isolate;white-space:nowrap}
+.btn::before{content:"";position:absolute;inset:0;background:var(--blue);transform:translateY(101%);transition:transform .5s var(--ease);z-index:-1;border-radius:inherit}
+.btn:hover::before{transform:translateY(0)}
+.btn .arr{transition:transform .5s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.ghost:hover{color:#fff}
+.btn.sm{padding:10px 16px;font-size:14px}
+
+/* hero */
+.hero{padding-block:clamp(40px,7vw,96px) 32px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,4vw,64px);align-items:center}
+.eyebrow{display:flex;gap:10px;align-items:center}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--orange);display:inline-block}
+.hero h1{font-family:var(--f-display);font-weight:800;font-size:clamp(46px,7.4vw,112px);line-height:.93;letter-spacing:-.045em;margin:22px 0 0}
+.ln{display:block;overflow:hidden;padding-bottom:.07em;margin-bottom:-.07em}
+.ln>span{display:inline-block}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero-sub{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end;margin-top:40px}
+.hero-sub p{margin:0;max-width:56ch;color:var(--ink-2);font-size:18px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.globe-box{position:relative;aspect-ratio:1;max-width:560px;width:100%;justify-self:end}
+.globe-box canvas{width:100%;height:100%;display:block}
+.clocks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--ink);margin-top:clamp(40px,6vw,72px)}
+.clock{padding:16px 0 4px;display:flex;flex-direction:column;gap:2px}
+.clock+.clock{padding-left:20px;border-left:1px solid var(--rule)}
+.clock b{font-family:var(--f-display);font-weight:700;font-size:28px;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+
+/* marquee */
+.mq{border-block:1px solid var(--rule);padding-block:22px;overflow:hidden;margin-top:56px}
+.mq-row{white-space:nowrap;font-family:var(--f-display);font-weight:800;font-size:clamp(48px,8vw,116px);line-height:1;letter-spacing:-.045em;will-change:transform}
+.mq-row span{display:inline-block;padding-right:.35em}
+.mq-row i{font-style:normal;color:var(--blue);padding-right:.35em}
+
+/* statement */
+.statement{padding-block:clamp(80px,12vw,160px)}
+.statement p{font-family:var(--f-display);font-weight:700;font-size:clamp(30px,4.6vw,64px);line-height:1.08;letter-spacing:-.03em;margin:0;max-width:22ch}
+.statement .w{opacity:.14}
+
+/* who: photos */
+.who{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(20px,3vw,40px);align-items:end;padding-bottom:clamp(80px,10vw,140px)}
+.ph{overflow:hidden;border-radius:4px;background:var(--paper-2)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph-a{aspect-ratio:4/3;clip-path:inset(12% 10% 12% 10%)}
+.ph-a img{transform:scale(1.2)}
+.who-r{display:grid;gap:24px}
+.ph-b{aspect-ratio:4/5;width:72%}
+.who-r p{margin:0;color:var(--ink-2);max-width:40ch}
+
+/* section head */
+.sec{padding-block:clamp(72px,10vw,140px)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.sec-head h2{font-family:var(--f-display);font-weight:800;font-size:clamp(38px,5.4vw,78px);line-height:.95;letter-spacing:-.04em;margin:12px 0 0;text-wrap:balance}
+.sec-head p{margin:0;color:var(--ink-2);max-width:52ch}
+
+/* services list (hover image) */
+#services{position:relative}
+.h1[data-t="vi"]{font-size:clamp(34px,5.2vw,80px)}
+.h1[data-t="vi"] .ln>span{white-space:nowrap}
+.svc{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink);position:relative}
+.svc li{display:grid;grid-template-columns:72px minmax(0,1.1fr) minmax(0,1fr);gap:24px;align-items:baseline;padding:28px 0;border-bottom:1px solid var(--rule);transition:padding-left .6s var(--ease)}
+.svc .n{font-family:var(--f-mono);font-size:13px;color:var(--ink-3)}
+.svc h3{font-family:var(--f-display);font-weight:700;font-size:clamp(28px,3.4vw,48px);line-height:1;letter-spacing:-.03em;margin:0;transition:color .4s var(--ease)}
+.svc p{margin:0;color:var(--ink-2);font-size:16px;max-width:46ch}
+.svc .thumb{display:none}
+.svc:hover h3{color:var(--ink-3)}
+.svc li:hover h3{color:var(--ink)}
+.svc li:hover{padding-left:16px}
+.float{position:absolute;left:0;top:0;width:min(380px,30vw);aspect-ratio:4/3;border-radius:6px;overflow:hidden;pointer-events:none;z-index:5;opacity:0;transform:scale(.7);background:#fff;border:1px solid var(--rule);box-shadow:0 34px 60px -30px rgba(14,26,43,.38)}
+/* service illustrations */
+.viz{width:100%;height:100%;display:block;font-family:var(--f-mono)}
+.viz .lb{font-size:11px;letter-spacing:.08em;fill:var(--ink-2)}
+.viz .tg{font-size:13px;fill:var(--ink);font-weight:500}
+.viz .big{font-family:var(--f-display);font-weight:700;font-size:22px;fill:var(--ink)}
+.viz .row{font-family:var(--f-body);font-size:16px;fill:var(--ink)}
+.viz .pt{font-size:8.5px;letter-spacing:.06em;fill:#fff}
+.viz .bt{font-size:11px;letter-spacing:.1em;fill:#fff}
+.viz .ax{fill:none;stroke:var(--ink);stroke-width:1.3}
+.viz .gd{fill:none;stroke:var(--rule);stroke-width:1}
+.viz .dash,.viz .lnk{fill:none;stroke:var(--ink-3);stroke-width:1.2;stroke-dasharray:4 4}
+.viz .lnk{stroke-dasharray:none;stroke:var(--ink)}
+.viz .target{fill:none;stroke:var(--orange);stroke-width:1.6;stroke-dasharray:6 5}
+.viz .dot{fill:var(--ink);opacity:.16}
+.viz .hit{fill:var(--blue)}
+.viz .ring{fill:none;stroke:var(--orange);stroke-width:1.6;stroke-dasharray:5 5}
+.viz .track{fill:none;stroke:var(--paper-2);stroke-width:12}
+.viz .gauge{fill:none;stroke:var(--blue);stroke-width:12;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:gauge 1.5s var(--ease) .2s forwards}
+@keyframes gauge{to{stroke-dashoffset:.08}}
+.viz .ok{fill:none;stroke:var(--blue);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.viz .pill{fill:var(--orange)}
+.viz .ph{fill:var(--paper-2)}
+.viz .ht{fill:var(--ink)}
+.viz .bar{fill:var(--rule)}
+.viz .bar.ink,.viz .ink{fill:var(--ink)}
+.viz .star{fill:var(--orange)}
+.viz .bul{fill:var(--ink-3)}
+.viz .btn{fill:var(--ink)}
+.viz .warn{fill:var(--orange)}
+.viz .ok-b{fill:var(--blue)}
+.viz .area{fill:var(--blue-soft)}
+.viz .line{fill:none;stroke:var(--blue);stroke-width:2.4;stroke-linejoin:round}
+.viz .box{fill:#fff;stroke:var(--ink);stroke-width:1.5}
+.viz .boxl{fill:none;stroke:var(--ink);stroke-width:1.5}
+.viz .dr{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.1s var(--ease) forwards;animation-delay:var(--d,0s)}
+@keyframes draw{to{stroke-dashoffset:0}}
+.viz .gy{transform-box:fill-box;transform-origin:50% 100%;transform:scaleY(0);animation:gy .9s var(--ease) forwards;animation-delay:var(--d,0s)}
+@keyframes gy{to{transform:scaleY(1)}}
+.viz .gx{transform-box:fill-box;transform-origin:0 50%;transform:scaleX(0);animation:gx .9s var(--ease) forwards;animation-delay:var(--d,0s)}
+@keyframes gx{to{transform:scaleX(1)}}
+.viz .fi{opacity:0;animation:fi .6s var(--ease) forwards;animation-delay:var(--d,0s)}
+@keyframes fi{to{opacity:1}}
+.viz .pop{transform-box:fill-box;transform-origin:center;transform:scale(0);animation:pop .8s var(--ease) forwards;animation-delay:var(--d,0s)}
+@keyframes pop{to{transform:scale(1)}}
+.viz .dot.pop{opacity:.16}
+/* process icons */
+.step-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.ic{width:clamp(56px,6vw,84px);height:auto;flex:none}
+.ic *{fill:none;stroke:#fff;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.4s var(--ease)}
+.ic .acc{stroke:var(--orange)}
+.step.on .ic *{stroke-dashoffset:0}
+.step.on .ic *:nth-child(2){transition-delay:.12s}.step.on .ic *:nth-child(3){transition-delay:.24s}.step.on .ic *:nth-child(4){transition-delay:.36s}.step.on .ic *:nth-child(5){transition-delay:.48s}.step.on .ic *:nth-child(6){transition-delay:.6s}
+
+/* approach horizontal */
+.approach{background:var(--ink);color:#fff}
+.approach .sec-head p{color:#AAB4C5}
+.approach .mono{color:#AAB4C5}
+.hpin{height:100vh;height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding-block:72px 32px}
+.htrack{display:flex;gap:24px;padding-left:var(--gut);padding-right:var(--gut);will-change:transform}
+.step{flex:none;width:min(80vw,600px);min-height:min(56vh,440px);border:1px solid rgba(255,255,255,.16);border-radius:4px;padding:32px;display:flex;flex-direction:column;justify-content:space-between;background:rgba(255,255,255,.02)}
+.step .big{font-family:var(--f-display);font-weight:800;font-size:clamp(90px,13vw,190px);line-height:.78;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.55)}
+.step h3{font-family:var(--f-display);font-weight:700;font-size:clamp(30px,3vw,44px);letter-spacing:-.03em;margin:0 0 10px}
+.step p{margin:0;color:#B8C2D2;max-width:38ch}
+.hbar{margin:28px var(--gut) 0;height:2px;background:rgba(255,255,255,.14);position:relative}
+.hbar i{position:absolute;inset:0;background:var(--orange);transform-origin:left;transform:scaleX(0)}
+
+/* data */
+.data-top{position:relative;border-radius:4px;overflow:hidden;background:var(--paper-2);min-height:min(62vh,520px);display:flex;align-items:flex-end;margin-bottom:clamp(32px,4vw,56px);touch-action:pan-y}
+.data-top canvas{position:absolute;inset:0;width:100%;height:100%}
+.data-top .txt{position:relative;z-index:1;padding:clamp(24px,4vw,48px);pointer-events:none}
+.data-top h2{font-family:var(--f-display);font-weight:800;font-size:clamp(40px,6vw,92px);line-height:.92;letter-spacing:-.045em;margin:10px 0 0;max-width:14ch}
+.rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px}
+.rule{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;padding:24px 0;border-top:1px solid var(--rule)}
+.rule h3{font-family:var(--f-display);font-weight:700;font-size:26px;letter-spacing:-.02em;margin:0}
+.rule p{margin:0;color:var(--ink-2);font-size:16px}
+
+/* careers */
+.place{text-align:center;padding-block:clamp(40px,6vw,80px) 0}
+.place-word{font-family:var(--f-display);font-weight:800;font-size:clamp(76px,20vw,320px);line-height:.84;letter-spacing:-.055em;color:var(--ink);background-size:190% auto;background-position:0% 55%;-webkit-background-clip:text;background-clip:text}
+.place-word.has-img{color:transparent;-webkit-text-fill-color:transparent}
+.careers-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);align-items:start;margin-top:clamp(40px,6vw,80px)}
+.careers-grid h2{font-family:var(--f-display);font-weight:800;font-size:clamp(34px,4.4vw,60px);line-height:.98;letter-spacing:-.035em;margin:12px 0 18px}
+.careers-grid>div>p{color:var(--ink-2);margin:0 0 28px;max-width:46ch}
+.pse{display:grid;gap:0;border-top:1px solid var(--ink)}
+.pse>div{display:grid;grid-template-columns:160px minmax(0,1fr);gap:16px;padding:20px 0;border-bottom:1px solid var(--rule)}
+.pse b{font-family:var(--f-display);font-weight:700;font-size:20px;letter-spacing:-.01em;display:block;margin-bottom:4px}
+.pse p{margin:0;color:var(--ink-2);font-size:15px}
+.ph-c{aspect-ratio:3/2;margin-top:28px}
+
+/* contact */
+.contact{background:var(--paper-2)}
+.contact h2{font-family:var(--f-display);font-weight:800;font-size:clamp(44px,7vw,110px);line-height:.92;letter-spacing:-.045em;margin:14px 0 40px;max-width:15ch}
+.contact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;border-top:1px solid var(--ink);padding-top:24px}
+.contact-grid div{display:flex;flex-direction:column;gap:6px}
+.contact-grid a,.contact-grid span{font-size:18px;font-weight:500;text-decoration:none}
+.contact-grid a:hover{color:var(--blue)}
+.foot{padding-block:28px 40px;font-size:13px;color:var(--ink-2);display:grid;gap:10px}
+.foot .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.foot a{color:var(--ink)}
+
+/* nút Life at SGL */
+.life{display:inline-flex;align-items:center;gap:9px;font:600 14px var(--f-body);text-decoration:none;color:var(--ink);padding:7px 8px 7px 13px;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1.5px var(--orange);position:relative;overflow:hidden;isolation:isolate;white-space:nowrap;transition:color .45s var(--ease)}
+.life::before{content:"";position:absolute;inset:0;background:var(--orange);transform:translateX(-101%);transition:transform .55s var(--ease);z-index:-1}
+.life::after{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(245,130,31,.22),transparent);animation:lifeShine 5.5s 1.8s infinite;z-index:-1}
+.life:hover,.life.on{color:#fff}
+.life:hover::before,.life.on::before{transform:translateX(0)}
+.life .pulse{position:relative;width:8px;height:8px;border-radius:50%;background:var(--orange);flex:none;transition:background .45s var(--ease)}
+.life .pulse::after{content:"";position:absolute;inset:0;border-radius:50%;background:inherit;animation:lifePulse 1.8s var(--ease) infinite}
+.life:hover .pulse,.life.on .pulse{background:#fff}
+.life .tag{font:600 10px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;background:var(--ink);color:#fff;padding:4px 8px;border-radius:999px}
+@keyframes lifePulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(3.2);opacity:0}}
+@keyframes lifeShine{0%{left:-60%}22%,100%{left:120%}}
+.logo{flex:none}
+@media (max-width:560px){.nav .wrap{gap:12px}.nav-r{gap:8px}.life{padding:7px 12px;font-size:13px;gap:7px}.life .tag,.life .xs-hide{display:none}}
+@media (prefers-reduced-motion:reduce){.life::after,.life .pulse::after{animation:none;display:none}}
+
+@media (max-width:980px){
+  .nav-links{display:none}
+  .hero-grid{grid-template-columns:minmax(0,1fr)}
+  .globe-box{justify-self:center;max-width:420px;order:-1;margin-bottom:-20px}
+  .hero-sub{grid-template-columns:minmax(0,1fr)}
+  .clocks{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .clock:nth-child(3){padding-left:0;border-left:0}
+  .clock:nth-child(n+3){border-top:1px solid var(--rule)}
+  .who{grid-template-columns:minmax(0,1fr)}
+  .ph-b{width:60%}
+  .sec-head,.careers-grid{grid-template-columns:minmax(0,1fr)}
+  .svc li{grid-template-columns:36px minmax(0,1fr)}
+  .svc p{grid-column:2/3}
+  .svc .thumb{display:block;grid-column:2/3;width:100%;max-width:340px;aspect-ratio:4/3;border-radius:6px;overflow:hidden;border:1px solid var(--rule);background:#fff;margin-top:6px}
+  .float{display:none}
+  .rules{grid-template-columns:minmax(0,1fr)}
+  .contact-grid{grid-template-columns:minmax(0,1fr)}
+  .pse>div{grid-template-columns:minmax(0,1fr);gap:4px}
+}
+@media (max-width:560px){
+  .btn.sm.hide-s{display:none}
+  .logo img{height:28px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .viz *{animation:none!important;transform:none!important;opacity:1!important;stroke-dashoffset:0!important}
+  .viz .dot{opacity:.16!important}
+  .ic *{stroke-dashoffset:0!important;transition:none!important}
+  .statement .w{opacity:1}
+  .ph-a{clip-path:none}.ph-a img{transform:none}
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
-<style>
-  html { scroll-behavior: smooth; }
-  body { margin: 0; background: #0A1A2C; }
-  a { color: #2E8AD4; text-decoration: none; }
-  a:hover { color: #4FC7C4; }
-  [data-t="vi"] { display: none; }
-  [data-lang="vi"] [data-t="vi"] { display: revert; }
-  [data-lang="vi"] [data-t="en"] { display: none; }
-  [data-lang="en"] [data-lang-btn="en"], [data-lang="vi"] [data-lang-btn="vi"] { background: #1B75BC; color: #FFFFFF; }
-  @keyframes sgl-orbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-  @keyframes sgl-orbit-rev { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
-
-  .sgl-sec { padding: 112px 40px; }
-  .sgl-wrap { max-width: 1240px; margin: 0 auto; }
-  .sgl-h1 { margin: 0; font-size: 56px; line-height: 1.04; font-weight: 800; letter-spacing: -0.03em; text-wrap: balance; }
-  .sgl-h2 { margin: 0; font-size: 46px; line-height: 1.08; font-weight: 800; letter-spacing: -0.03em; text-wrap: balance; }
-  .sgl-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #17A9A9; }
-  .sgl-lead { margin: 0; font-size: 17px; line-height: 1.7; color: #94A7BA; }
-  .sgl-g-hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
-  .sgl-g2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; align-items: end; }
-  .sgl-g3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
-  .sgl-g4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
-  .sgl-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
-  .sgl-fact { padding: 34px 24px; display: flex; flex-direction: column; gap: 8px; border-left: 1px solid rgba(255,255,255,0.06); }
-  .sgl-fact:first-child { border-left: 0; padding-left: 0; }
-  .sgl-fact-v { font-size: 24px; font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF; }
-  .sgl-card { border-radius: 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); padding: 30px; display: flex; flex-direction: column; gap: 14px; transition: all 200ms cubic-bezier(0.22,0.61,0.36,1); }
-  .sgl-card:hover { background: rgba(255,255,255,0.05); border-color: rgba(46,138,212,0.4); transform: translateY(-3px); }
-  .sgl-card-t { font-size: 20px; font-weight: 700; letter-spacing: -0.01em; color: #FFFFFF; }
-  .sgl-card-d { font-size: 15px; line-height: 1.65; color: #94A7BA; }
-  .sgl-ico { width: 42px; height: 42px; border-radius: 11px; background: rgba(27,117,188,0.16); display: flex; align-items: center; justify-content: center; }
-  .sgl-step-n { font-size: 13px; font-weight: 700; letter-spacing: 0.14em; color: #F5821F; }
-  .sgl-btn { display: inline-block; padding: 15px 28px; border-radius: 8px; background: #1B75BC; color: #FFFFFF; font-size: 15px; font-weight: 600; white-space: nowrap; transition: all 180ms cubic-bezier(0.22,0.61,0.36,1); }
-  .sgl-btn:hover { background: #2E8AD4; color: #FFFFFF; box-shadow: 0 8px 32px rgba(27,117,188,0.35); transform: translateY(-1px); }
-  .sgl-btn-ghost { display: inline-block; padding: 15px 28px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.18); color: #E8EEF4; font-size: 15px; font-weight: 600; white-space: nowrap; transition: all 180ms cubic-bezier(0.22,0.61,0.36,1); }
-  .sgl-btn-ghost:hover { background: rgba(255,255,255,0.06); color: #FFFFFF; }
-  .sgl-navlinks { display: flex; gap: 26px; font-size: 14px; font-weight: 500; }
-  .sgl-navlinks a { color: #A9B9C9; }
-  .sgl-navlinks a:hover { color: #FFFFFF; }
-  .sgl-langbtn { padding: 6px 14px; border: 0; border-radius: 999px; background: transparent; font: inherit; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; color: #A9B9C9; cursor: pointer; transition: all 160ms cubic-bezier(0.22,0.61,0.36,1); }
-  .sgl-langbtn:focus-visible, .sgl-btn:focus-visible, .sgl-btn-ghost:focus-visible { outline: 2px solid #4FC7C4; outline-offset: 2px; }
-  .sgl-row { display: flex; gap: 14px; align-items: baseline; flex-wrap: wrap; }
-  .sgl-row-k { width: 92px; flex: none; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #17A9A9; }
-
-
-  .sgl-plat-sec { padding: 0 40px; border-bottom: 1px solid rgba(255,255,255,0.08); }
-  .sgl-plats { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px 40px; padding-top: 30px; padding-bottom: 30px; }
-  .sgl-plats-k { flex: none; }
-  .sgl-plat { font-size: 30px; font-weight: 800; letter-spacing: -0.03em; color: #C3CFDB; transition: color 160ms; }
-  .sgl-plat:hover { color: #FFFFFF; }
-  .sgl-plat:focus-visible { outline: 2px solid #4FC7C4; outline-offset: 4px; }
-  @media (max-width: 1000px) {
-    .sgl-plat-sec { padding: 0 24px; }
-    .sgl-plats { justify-content: flex-start; }
-    .sgl-plats-k { flex-basis: 100%; }
-    .sgl-navlinks { display: none; }
-    .sgl-g-hero { grid-template-columns: minmax(0, 1fr); }
-    .sgl-g2 { grid-template-columns: minmax(0, 1fr); gap: 20px; }
-    .sgl-g3, .sgl-g4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .sgl-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .sgl-fact:nth-child(3) { border-left: 0; padding-left: 0; }
-    .sgl-h1 { font-size: 48px; }
-    .sgl-h2 { font-size: 36px; }
-    .sgl-sec { padding: 80px 24px; }
-  }
-  @media (max-width: 620px) {
-    .sgl-plat-sec { padding: 0 16px; }
-    .sgl-plat { font-size: 24px; }
-    .sgl-g3, .sgl-g4, .sgl-facts { grid-template-columns: minmax(0, 1fr); }
-    .sgl-fact { border-left: 0; padding: 22px 0; border-top: 1px solid rgba(255,255,255,0.06); }
-    .sgl-fact:first-child { border-top: 0; }
-    .sgl-h1 { font-size: 36px; }
-    .sgl-h2 { font-size: 29px; }
-    .sgl-sec { padding: 64px 16px; }
-    .sgl-nav-cta, .sgl-nav-tag { display: none; }
-    .sgl-navbar { padding: 12px 16px !important; }
-    .sgl-footer { flex-direction: column; align-items: flex-start !important; }
-  }
-</style>
 </head>
 <body>
-<div id="sgl-root" data-lang="en" style="background: #0A1A2C; color: #FFFFFF; font-family: Outfit, 'Be Vietnam Pro', sans-serif; overflow-x: hidden">
+<div id="sgl-root" data-lang="en">
 
-  <nav style="position: sticky; top: 0; z-index: 20; background: rgba(6,15,26,0.9); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.06)">
-    <div class="sgl-navbar" style="max-width: 1240px; margin: 0 auto; padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
-      <a href="#top" style="display: flex; align-items: center; gap: 12px">
-        <img src="assets/sgl-mark-white.png" alt="" style="height: 34px; width: auto; display: block">
-        <div style="display: flex; flex-direction: column; gap: 2px">
-          <div style="font-size: 15px; font-weight: 800; letter-spacing: 0.02em; color: #FFFFFF">S GLOBAL LINK</div>
-          <div class="sgl-nav-tag" style="font-size: 9px; font-weight: 600; letter-spacing: 0.18em; color: #17A9A9">SMART LINK · GLOBAL REACH</div>
-        </div>
-      </a>
-      <div style="display: flex; align-items: center; gap: 24px">
-        <div class="sgl-navlinks">
-          <a href="#services"><span data-t="en">Services</span><span data-t="vi">Dịch vụ</span></a>
-          <a href="#approach"><span data-t="en">Approach</span><span data-t="vi">Cách làm việc</span></a>
-          <a href="#data"><span data-t="en">Data &amp; security</span><span data-t="vi">Dữ liệu &amp; bảo mật</span></a>
-          <a href="#careers"><span data-t="en">Careers</span><span data-t="vi">Tuyển dụng</span></a>
-        </div>
-        <div style="display: flex; gap: 2px; padding: 3px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08)">
-          <button type="button" class="sgl-langbtn" data-lang-btn="en" aria-label="English">EN</button>
-          <button type="button" class="sgl-langbtn" data-lang-btn="vi" aria-label="Tiếng Việt">VI</button>
-        </div>
-        <a href="#contact" class="sgl-btn sgl-nav-cta" style="padding: 10px 20px; font-size: 14px"><span data-t="en">Contact us</span><span data-t="vi">Liên hệ</span></a>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="S Global Link"><img src="assets/sgl-logo-ngang-dark.png" alt="S Global Link" width="837" height="200"></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#services"><span data-t="en">Services</span><span data-t="vi">Dịch vụ</span></a>
+      <a href="#approach"><span data-t="en">Approach</span><span data-t="vi">Cách làm việc</span></a>
+      <a href="#data"><span data-t="en">Data</span><span data-t="vi">Dữ liệu</span></a>
+    </nav>
+    <div class="nav-r">
+      <a class="life" href="careers.html"><span class="pulse" aria-hidden="true"></span><span data-t="en">Life at SGL</span><span data-t="vi">Cuộc sống<span class="xs-hide"> tại</span> SGL</span><span class="tag"><span data-t="en">We’re hiring</span><span data-t="vi">Đang tuyển</span></span></a>
+      <div class="lang" role="group" aria-label="Language"><button type="button" data-lang-btn="en">EN</button><button type="button" data-lang-btn="vi">VI</button></div>
+      <a class="btn sm hide-s" href="#contact"><span data-t="en">Contact us</span><span data-t="vi">Liên hệ</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow mono"><i></i><span data-t="en">Market research · Marketplace operations</span><span data-t="vi">Nghiên cứu thị trường · Vận hành sàn</span></div>
+        <h1 data-t="en" class="h1"><span class="ln"><span>E-commerce</span></span><span class="ln"><span>operations for</span></span><span class="ln"><span>brands selling</span></span><span class="ln"><span><em>across borders.</em></span></span></h1>
+        <h1 data-t="vi" class="h1"><span class="ln"><span>Vận hành</span></span><span class="ln"><span>thương mại điện tử</span></span><span class="ln"><span>cho doanh nghiệp</span></span><span class="ln"><span>bán hàng</span></span><span class="ln"><span><em>xuyên biên giới.</em></span></span></h1>
+      </div>
+      <div class="globe-box" aria-hidden="true"><canvas id="globe"></canvas></div>
+    </div>
+    <div class="hero-sub">
+      <p><span data-t="en">S Global Link is a service company based in Da Nang, Vietnam. We research products and markets, then run the day-to-day work on Amazon, Walmart, Shopify and Wayfair: catalog, advertising, inventory and reporting.</span><span data-t="vi">S Global Link là công ty dịch vụ đặt tại Đà Nẵng. Chúng tôi nghiên cứu sản phẩm và thị trường, sau đó vận hành công việc hằng ngày trên Amazon, Walmart, Shopify và Wayfair: danh mục sản phẩm, quảng cáo, tồn kho và báo cáo.</span></p>
+      <div class="hero-cta">
+        <a class="btn" href="#services"><span data-t="en">Our services</span><span data-t="vi">Dịch vụ của chúng tôi</span><span class="arr">→</span></a>
+        <a class="btn ghost" href="#approach"><span data-t="en">How we work</span><span data-t="vi">Cách chúng tôi làm việc</span></a>
       </div>
     </div>
-  </nav>
+    <div class="clocks" aria-label="Local times">
+      <div class="clock"><span class="mono"><span data-t="en">Da Nang</span><span data-t="vi">Đà Nẵng</span> · GMT+7</span><b data-tz="Asia/Ho_Chi_Minh">--:--</b></div>
+      <div class="clock"><span class="mono">New York · ET</span><b data-tz="America/New_York">--:--</b></div>
+      <div class="clock"><span class="mono">Los Angeles · PT</span><b data-tz="America/Los_Angeles">--:--</b></div>
+      <div class="clock"><span class="mono"><span data-t="en">Office</span><span data-t="vi">Văn phòng</span></span><b style="font-size:18px;line-height:1.5"><span data-t="en">36 Tran Xuan Le, Da Nang</span><span data-t="vi">36 Trần Xuân Lê, Đà Nẵng</span></b></div>
+    </div>
+  </section>
 
-  <section id="top" class="sgl-sec" style="position: relative; background: linear-gradient(135deg, #0A1A2C 0%, #10375C 140%)">
-    <div style="position: absolute; inset: 0; background: radial-gradient(ellipse 60% 55% at 78% 42%, rgba(27,117,188,0.22) 0%, transparent 70%); pointer-events: none"></div>
-    <div style="position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,0.9) 1px, transparent 1px); background-size: 26px 26px; opacity: 0.05; pointer-events: none"></div>
-    <div class="sgl-wrap sgl-g-hero" style="position: relative">
-      <div style="display: flex; flex-direction: column; gap: 26px">
-        <div style="height: 3px; width: 140px; background: linear-gradient(90deg, #17A9A9, #1B75BC 60%, #F5821F)"></div>
-        <div class="sgl-eyebrow"><span data-t="en">Market research · Marketplace operations</span><span data-t="vi">Nghiên cứu thị trường · Vận hành thương mại điện tử</span></div>
-        <h1 class="sgl-h1"><span data-t="en">We run e&#8209;commerce operations for brands selling <span style="color: #2E8AD4">across borders</span>.</span><span data-t="vi">Vận hành thương mại điện tử cho doanh nghiệp bán hàng <span style="color: #2E8AD4">xuyên biên giới</span>.</span></h1>
-        <p style="margin: 0; max-width: 580px; font-size: 19px; line-height: 1.7; color: #A9B9C9"><span data-t="en">S Global Link is a service company based in Da Nang, Vietnam. We research products and markets, then run the day-to-day work on Amazon, Walmart, Shopify and Wayfair: catalog, advertising, inventory and reporting.</span><span data-t="vi">S Global Link là công ty dịch vụ đặt tại Đà Nẵng. Chúng tôi nghiên cứu sản phẩm và thị trường, sau đó vận hành công việc hằng ngày trên Amazon, Walmart, Shopify và Wayfair: danh mục sản phẩm, quảng cáo, tồn kho và báo cáo.</span></p>
-        <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-top: 6px">
-          <a href="#services" class="sgl-btn"><span data-t="en">Our services</span><span data-t="vi">Dịch vụ của chúng tôi</span></a>
-          <a href="#approach" class="sgl-btn-ghost"><span data-t="en">How we work</span><span data-t="vi">Cách chúng tôi làm việc</span></a>
-        </div>
+  <div class="mq" aria-label="Amazon, Walmart, Shopify, Wayfair">
+    <div class="mq-row" id="mq" aria-hidden="true"></div>
+  </div>
+
+  <section class="statement wrap">
+    <p class="words" data-t="en">One team for the whole marketplace workflow, from the first market study to the weekly profit report.</p>
+    <p class="words" data-t="vi">Một đội ngũ cho toàn bộ quy trình bán hàng trên sàn, từ bản nghiên cứu thị trường đầu tiên đến báo cáo lợi nhuận hằng tuần.</p>
+  </section>
+
+  <section class="who wrap" aria-label="Team">
+    <div class="ph ph-a" id="phA"><img src="assets/photos/team-table.jpg" alt="Team working together at a long table by the window" loading="lazy" width="1800" height="1201"></div>
+    <div class="who-r">
+      <div class="ph ph-b"><img src="assets/photos/office-team.jpg" alt="Team reviewing results together on a laptop in a meeting room" loading="lazy" width="1100" height="1650" style="aspect-ratio:4/5"></div>
+      <p><span data-t="en">Our people work on international marketplaces every day, with real budgets and real numbers.</span><span data-t="vi">Nhân sự của chúng tôi làm việc trên các sàn quốc tế mỗi ngày, với ngân sách thật và số liệu thật.</span></p>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="services">
+    <div class="sec-head">
+      <div><span class="mono"><span data-t="en">Services</span><span data-t="vi">Dịch vụ</span></span>
+        <h2><span data-t="en">Six services, one operating team.</span><span data-t="vi">Sáu dịch vụ, một đội vận hành.</span></h2></div>
+      <p><span data-t="en">Each service can run on its own, but most clients use them together so research, listings, advertising and stock decisions are made from the same numbers.</span><span data-t="vi">Mỗi dịch vụ có thể làm riêng, nhưng phần lớn khách hàng dùng kết hợp để nghiên cứu, listing, quảng cáo và tồn kho cùng dựa trên một bộ số liệu.</span></p>
+    </div>
+    <ul class="svc" id="svc">
+      <li data-v="0"><span class="n">01</span><h3><span data-t="en">Market &amp; product research</span><span data-t="vi">Nghiên cứu thị trường &amp; sản phẩm</span></h3><p><span data-t="en">Demand, competition, pricing and unit economics, assessed before a product launches or a brand enters a new market.</span><span data-t="vi">Đánh giá nhu cầu, đối thủ, giá bán và bài toán lợi nhuận trên từng sản phẩm trước khi ra mắt hoặc bước vào thị trường mới.</span></p></li>
+      <li data-v="1"><span class="n">02</span><h3><span data-t="en">Marketplace account operations</span><span data-t="vi">Vận hành tài khoản bán hàng</span></h3><p><span data-t="en">Daily management of seller accounts: catalog, orders, account health, support cases and policy compliance.</span><span data-t="vi">Quản lý tài khoản hằng ngày: danh mục sản phẩm, đơn hàng, sức khỏe tài khoản, xử lý case và tuân thủ chính sách sàn.</span></p></li>
+      <li data-v="2"><span class="n">03</span><h3><span data-t="en">Listing &amp; brand content</span><span data-t="vi">Nội dung listing &amp; thương hiệu</span></h3><p><span data-t="en">Titles, bullet points, images, enhanced content and brand stores, written for search visibility and conversion.</span><span data-t="vi">Tiêu đề, mô tả, hình ảnh, nội dung nâng cao và gian hàng thương hiệu, tối ưu cho tìm kiếm và tỷ lệ chuyển đổi.</span></p></li>
+      <li data-v="3"><span class="n">04</span><h3><span data-t="en">Advertising management</span><span data-t="vi">Quản lý quảng cáo</span></h3><p><span data-t="en">Sponsored campaigns structured, monitored and adjusted against each product's profit target.</span><span data-t="vi">Xây dựng, theo dõi và điều chỉnh chiến dịch quảng cáo theo mục tiêu lợi nhuận của từng sản phẩm.</span></p></li>
+      <li data-v="4"><span class="n">05</span><h3><span data-t="en">Inventory &amp; supply planning</span><span data-t="vi">Kế hoạch tồn kho &amp; cung ứng</span></h3><p><span data-t="en">Sales forecasts, replenishment plans and shipment tracking that keep products in stock without tying up cash.</span><span data-t="vi">Dự báo bán hàng, kế hoạch nhập hàng và theo dõi lô hàng để luôn đủ hàng mà không đọng vốn.</span></p></li>
+      <li data-v="5"><span class="n">06</span><h3><span data-t="en">Reporting &amp; profit analytics</span><span data-t="vi">Báo cáo &amp; phân tích lợi nhuận</span></h3><p><span data-t="en">Weekly and monthly reports on sales, advertising and profit by product, each with clear next actions.</span><span data-t="vi">Báo cáo tuần và tháng về doanh số, quảng cáo và lợi nhuận theo từng sản phẩm, kèm việc cần làm tiếp theo.</span></p></li>
+    </ul>
+    <div class="float" id="float" aria-hidden="true"></div>
+  </section>
+
+  <section class="approach" id="approach">
+    <div class="hpin" id="hpin">
+      <div class="wrap sec-head" style="margin-bottom:36px">
+        <div><span class="mono"><span data-t="en">Approach</span><span data-t="vi">Cách làm việc</span></span>
+          <h2><span data-t="en">A clear process, measured by results.</span><span data-t="vi">Quy trình rõ ràng, đo bằng kết quả.</span></h2></div>
+        <p><span data-t="en">Every engagement follows the same four stages, with documented procedures and a fixed reporting rhythm.</span><span data-t="vi">Mọi hợp tác đều đi qua bốn giai đoạn, có quy trình bằng văn bản và nhịp báo cáo cố định.</span></p>
       </div>
+      <div class="htrack" id="htrack">
+        <article class="step"><div class="step-top"><div class="big">1</div><svg class="ic" viewBox="0 0 64 64" aria-hidden="true"><circle pathLength="1" cx="27" cy="27" r="17"/><path pathLength="1" d="M39.5 39.5L56 56"/><path pathLength="1" d="M20 34V28"/><path pathLength="1" d="M27 34V20"/><path pathLength="1" class="acc" d="M34 34V25"/></svg></div><div><h3><span data-t="en">Assess</span><span data-t="vi">Đánh giá</span></h3><p><span data-t="en">Review the market, the competition and the current state of the account and catalog.</span><span data-t="vi">Rà soát thị trường, đối thủ và hiện trạng tài khoản, danh mục sản phẩm.</span></p></div></article>
+        <article class="step"><div class="step-top"><div class="big">2</div><svg class="ic" viewBox="0 0 64 64" aria-hidden="true"><rect pathLength="1" x="12" y="10" width="40" height="46" rx="3"/><path pathLength="1" d="M24 10V5H40V10"/><path pathLength="1" class="acc" d="M19 25l4 4 7-7"/><path pathLength="1" d="M35 26H45"/><path pathLength="1" class="acc" d="M19 40l4 4 7-7"/><path pathLength="1" d="M35 41H45"/></svg></div><div><h3><span data-t="en">Plan</span><span data-t="vi">Lập kế hoạch</span></h3><p><span data-t="en">Agree on targets, budget, responsibilities and the metrics that define success.</span><span data-t="vi">Thống nhất mục tiêu, ngân sách, phân công trách nhiệm và chỉ số đo thành công.</span></p></div></article>
+        <article class="step"><div class="step-top"><div class="big">3</div><svg class="ic" viewBox="0 0 64 64" aria-hidden="true"><path pathLength="1" d="M53 32A21 21 0 0 1 17 47"/><path pathLength="1" d="M11 32A21 21 0 0 1 47 17"/><path pathLength="1" class="acc" d="M47 9V17H39"/><path pathLength="1" class="acc" d="M17 55V47H25"/><rect pathLength="1" x="24" y="24" width="16" height="16" rx="1.5"/><path pathLength="1" d="M24 30H40"/></svg></div><div><h3><span data-t="en">Operate</span><span data-t="vi">Vận hành</span></h3><p><span data-t="en">Run listings, advertising and inventory day to day under documented procedures.</span><span data-t="vi">Vận hành listing, quảng cáo và tồn kho hằng ngày theo quy trình chuẩn.</span></p></div></article>
+        <article class="step"><div class="step-top"><div class="big">4</div><svg class="ic" viewBox="0 0 64 64" aria-hidden="true"><path pathLength="1" d="M15 6H40L50 16V58H15Z"/><path pathLength="1" d="M40 6V16H50"/><path pathLength="1" d="M23 50V43"/><path pathLength="1" d="M31 50V37"/><path pathLength="1" d="M39 50V31"/><path pathLength="1" class="acc" d="M21 32L29 25L34 28L43 20"/></svg></div><div><h3><span data-t="en">Report &amp; improve</span><span data-t="vi">Báo cáo &amp; cải tiến</span></h3><p><span data-t="en">Report on a fixed schedule, review what the numbers say and adjust the plan.</span><span data-t="vi">Báo cáo theo lịch cố định, đọc số liệu và điều chỉnh kế hoạch.</span></p></div></article>
+      </div>
+      <div class="hbar"><i id="hbar"></i></div>
+    </div>
+  </section>
 
-      <div aria-hidden="true" style="position: relative; width: 100%; max-width: 460px; aspect-ratio: 1 / 1; margin: 0 auto; display: flex; align-items: center; justify-content: center">
-        <div style="position: absolute; width: 100%; height: 100%; transform: rotateX(74deg) rotateZ(-14deg); transform-style: preserve-3d">
-          <div style="position: absolute; inset: 0; border-radius: 50%; border: 1px solid rgba(79,199,196,0.22); animation: sgl-orbit 26s linear infinite">
-            <div style="position: absolute; top: -5px; left: 50%; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: #4FC7C4; box-shadow: 0 0 14px rgba(79,199,196,0.9)"></div>
-          </div>
-        </div>
-        <div style="position: absolute; width: 88%; height: 88%; transform: rotateX(68deg) rotateZ(28deg); transform-style: preserve-3d">
-          <div style="position: absolute; inset: 0; border-radius: 50%; border: 1px solid rgba(46,138,212,0.28); animation: sgl-orbit-rev 18s linear infinite">
-            <div style="position: absolute; top: -4px; left: 50%; width: 8px; height: 8px; margin-left: -4px; border-radius: 50%; background: #2E8AD4; box-shadow: 0 0 12px rgba(46,138,212,0.9)"></div>
-          </div>
-        </div>
-        <div style="position: absolute; width: 95%; height: 95%; transform: rotateX(80deg) rotateZ(62deg); transform-style: preserve-3d">
-          <div style="position: absolute; inset: 0; border-radius: 50%; border: 1px solid rgba(245,130,31,0.2); animation: sgl-orbit 34s linear infinite">
-            <div style="position: absolute; top: -4px; left: 50%; width: 7px; height: 7px; margin-left: -3.5px; border-radius: 50%; background: #F5821F; box-shadow: 0 0 12px rgba(245,130,31,0.9)"></div>
-          </div>
-        </div>
-        <div style="position: relative; width: 72%; aspect-ratio: 1 / 1; border-radius: 50%; background: radial-gradient(circle at 32% 26%, #2E8AD4 0%, #145E99 42%, #0F3F6B 68%, #071A2E 100%); box-shadow: inset -24px -18px 70px rgba(0,0,0,0.6), 0 0 90px rgba(27,117,188,0.35)">
-          <canvas data-globe="1" width="760" height="760" style="position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 50%; display: block"></canvas>
-          <div style="position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 30% 24%, rgba(255,255,255,0.18) 0%, transparent 40%); pointer-events: none"></div>
-        </div>
+  <section class="sec wrap" id="data">
+    <div class="data-top" id="field">
+      <canvas id="fieldc"></canvas>
+      <div class="txt"><span class="mono"><span data-t="en">Data &amp; security</span><span data-t="vi">Dữ liệu &amp; bảo mật</span></span>
+        <h2><span data-t="en">Client data stays the client's.</span><span data-t="vi">Dữ liệu của khách hàng thuộc về khách hàng.</span></h2></div>
+    </div>
+    <div class="rules">
+      <div class="rule"><span class="mono">Access</span><h3><span data-t="en">Authorized access only</span><span data-t="vi">Chỉ truy cập khi được cấp quyền</span></h3><p><span data-t="en">Access is granted by the account owner through each platform's own user permissions and official APIs.</span><span data-t="vi">Quyền truy cập do chủ tài khoản cấp, thông qua hệ thống phân quyền và API chính thức của từng nền tảng.</span></p></div>
+      <div class="rule"><span class="mono">Roles</span><h3><span data-t="en">Least privilege</span><span data-t="vi">Quyền tối thiểu</span></h3><p><span data-t="en">Each team member receives only the access their role requires. Access is removed when the role or the engagement ends.</span><span data-t="vi">Mỗi nhân sự chỉ được cấp quyền đúng với vai trò. Quyền được thu hồi khi kết thúc vai trò hoặc hợp tác.</span></p></div>
+      <div class="rule"><span class="mono">Use</span><h3><span data-t="en">Single purpose</span><span data-t="vi">Dùng đúng mục đích</span></h3><p><span data-t="en">Account data is used only to operate and report on that client's business. It is never sold or shared with other parties.</span><span data-t="vi">Dữ liệu tài khoản chỉ dùng để vận hành và báo cáo cho chính khách hàng đó, không bán hay chia sẻ cho bên khác.</span></p></div>
+      <div class="rule"><span class="mono">Policy</span><h3><span data-t="en">Platform compliance</span><span data-t="vi">Tuân thủ chính sách sàn</span></h3><p><span data-t="en">We follow the terms, policies and data protection requirements of every platform we operate on.</span><span data-t="vi">Chúng tôi tuân thủ điều khoản, chính sách và yêu cầu bảo vệ dữ liệu của mọi nền tảng mình vận hành.</span></p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="careers" style="padding-top:0">
+    <div class="place" aria-label="Da Nang"><div class="place-word" id="placeWord" aria-hidden="true">ĐÀ NẴNG</div></div>
+    <div class="wrap careers-grid">
+      <div>
+        <span class="mono"><span data-t="en">Careers</span><span data-t="vi">Tuyển dụng</span></span>
+        <h2><span data-t="en">Global e-commerce work, based in Da Nang.</span><span data-t="vi">Làm thương mại điện tử toàn cầu, ngay tại Đà Nẵng.</span></h2>
+        <p><span data-t="en">We assess work on three things: People, Spirit and Effectiveness.</span><span data-t="vi">Chúng tôi đánh giá công việc qua ba điều: Con người, Tinh thần và Hiệu quả.</span></p>
+        <a class="btn" href="careers.html"><span data-t="en">Life at SGL</span><span data-t="vi">Văn hoá &amp; tuyển dụng</span><span class="arr">→</span></a>
+        <div class="ph ph-c"><img src="assets/photos/colleagues.jpg" alt="Two colleagues working on a laptop together" loading="lazy" width="1400" height="934" style="aspect-ratio:3/2"></div>
+      </div>
+      <div class="pse">
+        <div><span class="mono">P · People</span><div><b><span data-t="en">Honest and respectful</span><span data-t="vi">Thẳng thắn và tôn trọng</span></b><p><span data-t="en">We say the difficult thing directly, and we respect capability over seniority.</span><span data-t="vi">Nói thẳng điều khó nói, và tôn trọng năng lực hơn thâm niên.</span></p></div></div>
+        <div><span class="mono">S · Spirit</span><div><b><span data-t="en">Proactive ownership</span><span data-t="vi">Chủ động và trách nhiệm</span></b><p><span data-t="en">Whoever takes a task owns it to the end. Mistakes are acceptable; learning nothing from them is not.</span><span data-t="vi">Ai nhận việc, người đó chịu trách nhiệm đến cùng. Sai có thể chấp nhận; sai mà không học được gì thì không.</span></p></div></div>
+        <div><span class="mono">E · Effectiveness</span><div><b><span data-t="en">Measured by results</span><span data-t="vi">Đo bằng kết quả</span></b><p><span data-t="en">Being busy is not the same as being effective. Every decision is checked against the numbers.</span><span data-t="vi">Bận rộn không có nghĩa là hiệu quả. Mọi quyết định đều được kiểm lại bằng số liệu.</span></p></div></div>
       </div>
     </div>
   </section>
 
-  <section class="sgl-plat-sec" aria-label="Platforms">
-    <div class="sgl-wrap sgl-plats">
-      <div class="sgl-eyebrow sgl-plats-k"><span data-t="en">Platforms we operate on</span><span data-t="vi">Nền tảng chúng tôi vận hành</span></div>
-      <a class="sgl-plat" href="https://www.amazon.com/" target="_blank" rel="noopener">Amazon</a>
-      <a class="sgl-plat" href="https://www.walmart.com/" target="_blank" rel="noopener">Walmart</a>
-      <a class="sgl-plat" href="https://shop.app/" target="_blank" rel="noopener">Shop</a>
-      <a class="sgl-plat" href="https://www.wayfair.com/" target="_blank" rel="noopener">Wayfair</a>
-    </div>
-  </section>
-
-  <section id="services" class="sgl-sec">
-    <div class="sgl-wrap" style="display: flex; flex-direction: column; gap: 48px">
-      <div class="sgl-g2">
-        <div style="display: flex; flex-direction: column; gap: 18px">
-          <div class="sgl-eyebrow"><span data-t="en">Services</span><span data-t="vi">Dịch vụ</span></div>
-          <h2 class="sgl-h2"><span data-t="en">One team for the whole <span style="color: #2E8AD4">marketplace workflow</span>.</span><span data-t="vi">Một đội ngũ cho toàn bộ <span style="color: #2E8AD4">quy trình bán hàng trên sàn</span>.</span></h2>
-        </div>
-        <p class="sgl-lead"><span data-t="en">From the first market study to the monthly profit report, the same team carries the work. Clients keep ownership of their brand, accounts and decisions; we carry out the operations.</span><span data-t="vi">Từ nghiên cứu thị trường ban đầu đến báo cáo lợi nhuận hằng tháng, cùng một đội ngũ theo suốt công việc. Khách hàng giữ quyền sở hữu thương hiệu, tài khoản và quyết định; chúng tôi thực thi phần vận hành.</span></p>
-      </div>
-
-      <div class="sgl-g3">
-        <div class="sgl-card">
-          <div class="sgl-ico"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8AD4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path><path d="M8 12l2-2 2 1.5 2-3"></path></svg></div>
-          <div class="sgl-card-t"><span data-t="en">Market &amp; product research</span><span data-t="vi">Nghiên cứu thị trường &amp; sản phẩm</span></div>
-          <div class="sgl-card-d"><span data-t="en">Demand, competition, pricing and unit economics, assessed before a product launches or a brand enters a new market.</span><span data-t="vi">Đánh giá nhu cầu, đối thủ, giá bán và bài toán lợi nhuận trên từng sản phẩm trước khi ra mắt hoặc bước vào thị trường mới.</span></div>
-        </div>
-        <div class="sgl-card">
-          <div class="sgl-ico"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8AD4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9l1-5h14l1 5"></path><path d="M4 9v11h16V9"></path><path d="M9 20v-6h6v6"></path></svg></div>
-          <div class="sgl-card-t"><span data-t="en">Marketplace account operations</span><span data-t="vi">Vận hành tài khoản bán hàng</span></div>
-          <div class="sgl-card-d"><span data-t="en">Daily management of seller accounts: catalog, orders, account health, support cases and policy compliance.</span><span data-t="vi">Quản lý tài khoản hằng ngày: danh mục sản phẩm, đơn hàng, sức khỏe tài khoản, xử lý case và tuân thủ chính sách sàn.</span></div>
-        </div>
-        <div class="sgl-card">
-          <div class="sgl-ico"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8AD4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"></rect><circle cx="9" cy="10" r="2"></circle><path d="M4 18l5-5 4 4 3-3 4 4"></path></svg></div>
-          <div class="sgl-card-t"><span data-t="en">Listing &amp; brand content</span><span data-t="vi">Nội dung listing &amp; thương hiệu</span></div>
-          <div class="sgl-card-d"><span data-t="en">Titles, bullet points, images, enhanced content and brand stores, written for search visibility and conversion.</span><span data-t="vi">Tiêu đề, mô tả, hình ảnh, nội dung nâng cao và gian hàng thương hiệu, tối ưu cho tìm kiếm và tỷ lệ chuyển đổi.</span></div>
-        </div>
-        <div class="sgl-card">
-          <div class="sgl-ico"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8AD4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1"></circle></svg></div>
-          <div class="sgl-card-t"><span data-t="en">Advertising management</span><span data-t="vi">Quản lý quảng cáo</span></div>
-          <div class="sgl-card-d"><span data-t="en">Sponsored campaigns structured, monitored and adjusted against each product's profit target.</span><span data-t="vi">Xây dựng, theo dõi và điều chỉnh chiến dịch quảng cáo theo mục tiêu lợi nhuận của từng sản phẩm.</span></div>
-        </div>
-        <div class="sgl-card">
-          <div class="sgl-ico"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8AD4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"></path><path d="M3 8l9 5 9-5"></path><path d="M12 13v8"></path></svg></div>
-          <div class="sgl-card-t"><span data-t="en">Inventory &amp; supply planning</span><span data-t="vi">Kế hoạch tồn kho &amp; cung ứng</span></div>
-          <div class="sgl-card-d"><span data-t="en">Sales forecasts, replenishment plans and shipment tracking that keep products in stock without tying up cash.</span><span data-t="vi">Dự báo bán hàng, kế hoạch nhập hàng và theo dõi lô hàng để luôn đủ hàng mà không đọng vốn.</span></div>
-        </div>
-        <div class="sgl-card">
-          <div class="sgl-ico"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8AD4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="M8 17v-5M13 17V8M18 17v-8"></path></svg></div>
-          <div class="sgl-card-t"><span data-t="en">Reporting &amp; profit analytics</span><span data-t="vi">Báo cáo &amp; phân tích lợi nhuận</span></div>
-          <div class="sgl-card-d"><span data-t="en">Weekly and monthly reports on sales, advertising and profit by product, each with clear next actions.</span><span data-t="vi">Báo cáo tuần và tháng về doanh số, quảng cáo và lợi nhuận theo từng sản phẩm, kèm việc cần làm tiếp theo.</span></div>
-        </div>
+  <section class="sec contact" id="contact">
+    <div class="wrap">
+      <span class="mono"><span data-t="en">Contact</span><span data-t="vi">Liên hệ</span></span>
+      <h2><span data-t="en">Tell us about your products and your market.</span><span data-t="vi">Hãy cho chúng tôi biết về sản phẩm và thị trường của bạn.</span></h2>
+      <div class="contact-grid">
+        <div><span class="mono">Email</span><a href="mailto:info@sgloballink.com">info@sgloballink.com</a></div>
+        <div><span class="mono"><span data-t="en">Address</span><span data-t="vi">Địa chỉ</span></span><span><span data-t="en">36 Tran Xuan Le, Thanh Khe, Da Nang, Vietnam</span><span data-t="vi">36 Trần Xuân Lê, Thanh Khê, Đà Nẵng</span></span></div>
+        <div><span class="mono">Facebook</span><a href="https://www.facebook.com/sgloballink" rel="noopener">facebook.com/sgloballink</a></div>
       </div>
     </div>
   </section>
+</main>
 
-  <section id="approach" class="sgl-sec" style="background: #060F1A; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06)">
-    <div class="sgl-wrap" style="display: flex; flex-direction: column; gap: 48px">
-      <div class="sgl-g2">
-        <div style="display: flex; flex-direction: column; gap: 18px">
-          <div class="sgl-eyebrow" style="color: #F5821F"><span data-t="en">Approach</span><span data-t="vi">Cách làm việc</span></div>
-          <h2 class="sgl-h2"><span data-t="en">A clear process, measured by <span style="color: #2E8AD4">results</span>.</span><span data-t="vi">Quy trình rõ ràng, đo bằng <span style="color: #2E8AD4">kết quả</span>.</span></h2>
-        </div>
-        <p class="sgl-lead"><span data-t="en">Every engagement follows the same four stages, with documented procedures and a fixed reporting rhythm, so clients always know what was done, what it produced and what comes next.</span><span data-t="vi">Mọi hợp tác đều đi qua bốn giai đoạn, có quy trình bằng văn bản và nhịp báo cáo cố định, để khách hàng luôn biết việc gì đã làm, kết quả ra sao và bước tiếp theo là gì.</span></p>
-      </div>
-
-      <div class="sgl-g4">
-        <div style="display: flex; flex-direction: column; gap: 12px; padding-top: 22px; border-top: 2px solid #1B75BC">
-          <div class="sgl-step-n">01</div>
-          <div class="sgl-card-t"><span data-t="en">Assess</span><span data-t="vi">Đánh giá</span></div>
-          <div class="sgl-card-d"><span data-t="en">Review the market, the competition and the current state of the account and catalog.</span><span data-t="vi">Rà soát thị trường, đối thủ và hiện trạng tài khoản, danh mục sản phẩm.</span></div>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 12px; padding-top: 22px; border-top: 2px solid #17A9A9">
-          <div class="sgl-step-n">02</div>
-          <div class="sgl-card-t"><span data-t="en">Plan</span><span data-t="vi">Lập kế hoạch</span></div>
-          <div class="sgl-card-d"><span data-t="en">Agree on targets, budget, responsibilities and the metrics that define success.</span><span data-t="vi">Thống nhất mục tiêu, ngân sách, phân công trách nhiệm và chỉ số đo thành công.</span></div>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 12px; padding-top: 22px; border-top: 2px solid #1B75BC">
-          <div class="sgl-step-n">03</div>
-          <div class="sgl-card-t"><span data-t="en">Operate</span><span data-t="vi">Vận hành</span></div>
-          <div class="sgl-card-d"><span data-t="en">Run listings, advertising and inventory day to day under documented procedures.</span><span data-t="vi">Vận hành listing, quảng cáo và tồn kho hằng ngày theo quy trình chuẩn.</span></div>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 12px; padding-top: 22px; border-top: 2px solid #F5821F">
-          <div class="sgl-step-n">04</div>
-          <div class="sgl-card-t"><span data-t="en">Report &amp; improve</span><span data-t="vi">Báo cáo &amp; cải tiến</span></div>
-          <div class="sgl-card-d"><span data-t="en">Report on a fixed schedule, review what the numbers say and adjust the plan.</span><span data-t="vi">Báo cáo theo lịch cố định, đọc số liệu và điều chỉnh kế hoạch.</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="data" class="sgl-sec">
-    <div class="sgl-wrap" style="display: flex; flex-direction: column; gap: 48px">
-      <div class="sgl-g2">
-        <div style="display: flex; flex-direction: column; gap: 18px">
-          <div class="sgl-eyebrow"><span data-t="en">Data &amp; security</span><span data-t="vi">Dữ liệu &amp; bảo mật</span></div>
-          <h2 class="sgl-h2"><span data-t="en">Client data stays the <span style="color: #2E8AD4">client's</span>.</span><span data-t="vi">Dữ liệu của khách hàng thuộc về <span style="color: #2E8AD4">khách hàng</span>.</span></h2>
-        </div>
-        <p class="sgl-lead"><span data-t="en">Operating a seller account means handling sales, customer and financial information. These are the rules we work by on every account.</span><span data-t="vi">Vận hành một tài khoản bán hàng nghĩa là tiếp xúc với dữ liệu doanh số, khách hàng và tài chính. Đây là các nguyên tắc chúng tôi áp dụng cho mọi tài khoản.</span></p>
-      </div>
-
-      <div class="sgl-g4">
-        <div class="sgl-card">
-          <div class="sgl-card-t"><span data-t="en">Authorized access only</span><span data-t="vi">Chỉ truy cập khi được cấp quyền</span></div>
-          <div class="sgl-card-d"><span data-t="en">Access is granted by the account owner through each platform's own user permissions and official APIs.</span><span data-t="vi">Quyền truy cập do chủ tài khoản cấp, thông qua hệ thống phân quyền và API chính thức của từng nền tảng.</span></div>
-        </div>
-        <div class="sgl-card">
-          <div class="sgl-card-t"><span data-t="en">Least privilege</span><span data-t="vi">Quyền tối thiểu</span></div>
-          <div class="sgl-card-d"><span data-t="en">Each team member receives only the access their role requires. Access is removed when the role or the engagement ends.</span><span data-t="vi">Mỗi nhân sự chỉ được cấp quyền đúng với vai trò. Quyền được thu hồi khi kết thúc vai trò hoặc hợp tác.</span></div>
-        </div>
-        <div class="sgl-card">
-          <div class="sgl-card-t"><span data-t="en">Single purpose</span><span data-t="vi">Dùng đúng mục đích</span></div>
-          <div class="sgl-card-d"><span data-t="en">Account data is used only to operate and report on that client's business. It is never sold or shared with other parties.</span><span data-t="vi">Dữ liệu tài khoản chỉ dùng để vận hành và báo cáo cho chính khách hàng đó, không bán hay chia sẻ cho bên khác.</span></div>
-        </div>
-        <div class="sgl-card">
-          <div class="sgl-card-t"><span data-t="en">Platform compliance</span><span data-t="vi">Tuân thủ chính sách sàn</span></div>
-          <div class="sgl-card-d"><span data-t="en">We follow the terms, policies and data protection requirements of every platform we operate on.</span><span data-t="vi">Chúng tôi tuân thủ điều khoản, chính sách và yêu cầu bảo vệ dữ liệu của mọi nền tảng mình vận hành.</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="careers" class="sgl-sec" style="background: #060F1A; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06)">
-    <div class="sgl-wrap" style="display: flex; flex-direction: column; gap: 48px">
-      <div class="sgl-g2">
-        <div style="display: flex; flex-direction: column; gap: 18px">
-          <div class="sgl-eyebrow"><span data-t="en">Careers</span><span data-t="vi">Tuyển dụng</span></div>
-          <h2 class="sgl-h2"><span data-t="en">Global e-commerce work, based in <span style="color: #2E8AD4">Da Nang</span>.</span><span data-t="vi">Làm thương mại điện tử toàn cầu, ngay tại <span style="color: #2E8AD4">Đà Nẵng</span>.</span></h2>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 20px; align-items: flex-start">
-          <p class="sgl-lead"><span data-t="en">Our people work on international marketplaces every day, with real budgets and real numbers. We assess work on three things: People, Spirit and Effectiveness.</span><span data-t="vi">Nhân sự của chúng tôi làm việc trên các sàn quốc tế mỗi ngày, với ngân sách thật và số liệu thật. Chúng tôi đánh giá công việc qua ba điều: Con người, Tinh thần và Hiệu quả.</span></p>
-          <a href="https://www.facebook.com/sgloballink" target="_blank" rel="noopener" class="sgl-btn-ghost"><span data-t="en">See open positions</span><span data-t="vi">Xem vị trí đang tuyển</span></a>
-        </div>
-      </div>
-
-      <div class="sgl-g3">
-        <div style="border-radius: 18px; background: rgba(23,169,169,0.07); border: 1px solid rgba(23,169,169,0.3); padding: 32px; display: flex; flex-direction: column; gap: 14px">
-          <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; color: #4FC7C4">P · PEOPLE</div>
-          <div style="font-size: 26px; font-weight: 800; letter-spacing: -0.02em"><span data-t="en">Honest and respectful</span><span data-t="vi">Thẳng thắn và tôn trọng</span></div>
-          <div class="sgl-card-d"><span data-t="en">We say the difficult thing directly, and we respect capability over seniority.</span><span data-t="vi">Nói thẳng điều khó nói, và tôn trọng năng lực hơn thâm niên.</span></div>
-        </div>
-        <div style="border-radius: 18px; background: rgba(245,130,31,0.07); border: 1px solid rgba(245,130,31,0.28); padding: 32px; display: flex; flex-direction: column; gap: 14px">
-          <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; color: #F5821F">S · SPIRIT</div>
-          <div style="font-size: 26px; font-weight: 800; letter-spacing: -0.02em"><span data-t="en">Proactive ownership</span><span data-t="vi">Chủ động và trách nhiệm</span></div>
-          <div class="sgl-card-d"><span data-t="en">Whoever takes a task owns it to the end. Mistakes are acceptable; learning nothing from them is not.</span><span data-t="vi">Ai nhận việc, người đó chịu trách nhiệm đến cùng. Sai có thể chấp nhận; sai mà không học được gì thì không.</span></div>
-        </div>
-        <div style="border-radius: 18px; background: rgba(27,117,188,0.09); border: 1px solid rgba(27,117,188,0.3); padding: 32px; display: flex; flex-direction: column; gap: 14px">
-          <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; color: #A6CBEA">E · EFFECTIVENESS</div>
-          <div style="font-size: 26px; font-weight: 800; letter-spacing: -0.02em"><span data-t="en">Measured by results</span><span data-t="vi">Đo bằng kết quả</span></div>
-          <div class="sgl-card-d"><span data-t="en">Being busy is not the same as being effective. Every decision is checked against the numbers.</span><span data-t="vi">Bận rộn không có nghĩa là hiệu quả. Mọi quyết định đều được kiểm lại bằng số liệu.</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="sgl-sec" style="background: linear-gradient(135deg, #0A1A2C, #10375C)">
-    <div class="sgl-wrap sgl-g-hero">
-      <div style="display: flex; flex-direction: column; gap: 22px">
-        <div style="height: 3px; width: 140px; background: linear-gradient(90deg, #17A9A9, #1B75BC 60%, #F5821F)"></div>
-        <h2 class="sgl-h2"><span data-t="en">Tell us about your products and your market.</span><span data-t="vi">Hãy cho chúng tôi biết về sản phẩm và thị trường của bạn.</span></h2>
-
-        <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 8px; padding: 26px 0; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1)">
-          <div class="sgl-row">
-            <div class="sgl-row-k"><span data-t="en">Company</span><span data-t="vi">Công ty</span></div>
-            <div style="font-size: 17px; font-weight: 600; color: #FFFFFF"><span data-t="en">S Global Link Co., Ltd.</span><span data-t="vi">Công ty TNHH TM&amp;DV S Global Link</span></div>
-          </div>
-          <div class="sgl-row">
-            <div class="sgl-row-k"><span data-t="en">Address</span><span data-t="vi">Địa chỉ</span></div>
-            <div style="font-size: 17px; color: #E8EEF4"><span data-t="en">36 Tran Xuan Le, Thanh Khe, Da Nang, Vietnam</span><span data-t="vi">36 Trần Xuân Lê, Thanh Khê, Đà Nẵng</span></div>
-          </div>
-          <div class="sgl-row">
-            <div class="sgl-row-k">Email</div>
-            <a href="mailto:info@sgloballink.com" style="font-size: 17px; color: #4FA3E3; font-weight: 600">info@sgloballink.com</a>
-          </div>
-        </div>
-
-        <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-top: 6px">
-          <a href="mailto:info@sgloballink.com" class="sgl-btn"><span data-t="en">Email us</span><span data-t="vi">Gửi email</span></a>
-          <a href="https://www.facebook.com/sgloballink" target="_blank" rel="noopener" class="sgl-btn-ghost">Facebook</a>
-        </div>
-      </div>
-      <div style="display: flex; justify-content: center">
-        <img src="assets/sgl-logo-white.png" alt="S Global Link" style="width: 100%; max-width: 320px; height: auto; display: block; opacity: 0.95">
-      </div>
-    </div>
-  </section>
-
-  <footer style="background: #060F1A; border-top: 1px solid rgba(255,255,255,0.06); padding: 36px 24px">
-    <div class="sgl-wrap" style="display: flex; flex-direction: column; gap: 18px">
-      <div class="sgl-footer" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
-        <div style="display: flex; align-items: center; gap: 12px">
-          <img src="assets/sgl-mark-white.png" alt="" style="height: 28px; width: auto; display: block; opacity: 0.8">
-          <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.18em; color: #8A9BAD">SMART LINK · GLOBAL REACH</div>
-        </div>
-        <div style="font-size: 13px; color: #8A9BAD"><span data-t="en">© 2026 S Global Link Co., Ltd. · 36 Tran Xuan Le, Thanh Khe, Da Nang, Vietnam</span><span data-t="vi">© 2026 Công ty TNHH TM&amp;DV S Global Link · 36 Trần Xuân Lê, Thanh Khê, Đà Nẵng</span></div>
-      </div>
-      <div style="font-size: 13px"><a href="privacy.html" style="color: #A9B9C9; text-decoration: underline; text-underline-offset: 3px"><span data-t="en">Privacy Policy</span><span data-t="vi">Chính sách bảo mật</span></a></div>
-      <div style="font-size: 12px; line-height: 1.6; color: #8A9BAD"><span data-t="en">Amazon, Walmart, Shopify and Wayfair are trademarks of their respective owners. S Global Link is an independent service provider and is not affiliated with or endorsed by these companies.</span><span data-t="vi">Amazon, Walmart, Shopify và Wayfair là nhãn hiệu của các chủ sở hữu tương ứng. S Global Link là đơn vị cung cấp dịch vụ độc lập, không trực thuộc và không được các công ty này bảo trợ.</span></div>
-    </div>
-  </footer>
-
+<footer class="wrap foot">
+  <div class="row"><span>© 2026 S Global Link Co., Ltd. · <span data-t="en">Company</span><span data-t="vi">Công ty</span>: <span data-t="en">S Global Link Co., Ltd.</span><span data-t="vi">Công ty TNHH TM&amp;DV S Global Link</span></span><a href="privacy.html"><span data-t="en">Privacy Policy</span><span data-t="vi">Chính sách bảo mật</span></a></div>
+  <div><span data-t="en">Amazon, Walmart, Shopify and Wayfair are trademarks of their respective owners. S Global Link is an independent service provider and is not affiliated with or endorsed by these companies.</span><span data-t="vi">Amazon, Walmart, Shopify và Wayfair là nhãn hiệu của các chủ sở hữu tương ứng. S Global Link là đơn vị cung cấp dịch vụ độc lập, không trực thuộc và không được các công ty này bảo trợ.</span></div>
+</footer>
 </div>
+
 <script>
-(function () {
-  var root = document.getElementById("sgl-root");
-  function setLang(l, save) {
-    root.setAttribute("data-lang", l);
-    document.documentElement.lang = l;
-    window.sglLang = l;
-    if (save) { try { localStorage.setItem("sgl-site-lang", l); } catch (e) {} }
+(function(){
+  var root=document.getElementById('sgl-root');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasG=typeof window.gsap!=='undefined'&&typeof window.ScrollTrigger!=='undefined';
+  var DANANG='assets/photos/da-nang.jpg';
+
+  /* ---------- language ---------- */
+  var onLang=[];
+  function setLang(l,save){
+    root.setAttribute('data-lang',l); document.documentElement.lang=l; window.sglLang=l;
+    if(save){try{localStorage.setItem('sgl-site-lang',l);}catch(e){}}
+    onLang.forEach(function(f){f(l);});
   }
-  var saved = null;
-  try { saved = localStorage.getItem("sgl-site-lang"); } catch (e) {}
-  setLang(saved === "vi" || saved === "en" ? saved : "en", false);
-  document.querySelectorAll("[data-lang-btn]").forEach(function (b) {
-    b.addEventListener("click", function () { setLang(b.getAttribute("data-lang-btn"), true); });
+  var saved=null; try{saved=localStorage.getItem('sgl-site-lang');}catch(e){}
+  setLang(saved==='vi'||saved==='en'?saved:'en',false);
+  document.querySelectorAll('[data-lang-btn]').forEach(function(b){b.addEventListener('click',function(){setLang(b.getAttribute('data-lang-btn'),true);});});
+
+  /* ---------- nav border ---------- */
+  var nav=document.getElementById('nav');
+  window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',scrollY>8);},{passive:true});
+
+  /* ---------- clocks ---------- */
+  function tick(){document.querySelectorAll('[data-tz]').forEach(function(el){
+    try{el.textContent=new Intl.DateTimeFormat('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:el.dataset.tz}).format(new Date());}catch(e){}
+  });}
+  tick(); setInterval(tick,15000);
+
+  /* ---------- marquee text ---------- */
+  var mq=document.getElementById('mq'), names=['Amazon','Walmart','Shopify','Wayfair'], h='';
+  for(var k=0;k<4;k++){names.forEach(function(n){h+='<span>'+n+'</span><i>/</i>';});}
+  mq.innerHTML=h;
+
+  /* ---------- statement words ---------- */
+  document.querySelectorAll('.words').forEach(function(p){
+    p.innerHTML=p.textContent.trim().split(/\s+/).map(function(w){return '<span class="w">'+w+'</span>';}).join(' ');
   });
-})();
 
-(function () {
-  function startGlobe() {
-    const canvas0 = document.querySelector("canvas[data-globe]");
-    if (!canvas0 || !window.d3 || !window.topojson) return false;
-    let canvas = canvas0;
-    let ctx = canvas.getContext("2d");
-    const S = canvas.width;
-    const R = S / 2;
-    const d3 = window.d3;
-    const projection = d3.geoOrthographic().translate([R, R]).scale(R - 14).clipAngle(90);
-    const path = d3.geoPath(projection, ctx);
-    const graticule = d3.geoGraticule10();
-    const makeOcean = () => {
-      const g = ctx.createRadialGradient(R * 0.68, R * 0.56, R * 0.1, R, R, R);
-      g.addColorStop(0, "#2E8AD4");
-      g.addColorStop(0.45, "#145E99");
-      g.addColorStop(0.78, "#0F3F6B");
-      g.addColorStop(1, "#071A2E");
-      return g;
-    };
-    let ocean = makeOcean();
-    const sites = [
-      { coord: [-98, 39], label: { en: "USA", vi: "MỸ" }, color: "#F5821F", text: "#FFCE9B" },
-      { coord: [106, 16], label: { en: "VIETNAM", vi: "VIỆT NAM" }, color: "#4FC7C4", text: "#9FDDDA" }
-    ];
-    let land = null;
-    fetch("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json")
-      .then((r) => r.json())
-      .then((topo) => { land = window.topojson.feature(topo, topo.objects.countries); })
-      .catch(() => {});
+  /* ---------- service illustrations (no stock photos) ---------- */
+  var VIZ=[
+  /* 0 research: market map */
+  '<svg class="viz" viewBox="0 0 400 300" role="img" aria-label="Market map: demand against competition">'+
+  '<text x="24" y="32" class="lb">MARKET MAP</text>'+
+  '<path class="gd" d="M60 90H376M60 140H376M60 190H376M140 52V250M220 52V250M300 52V250"/>'+
+  '<path class="ax dr" pathLength="1" d="M60 52V250H376"/>'+
+  '<text x="376" y="272" class="lb" text-anchor="end">COMPETITION →</text>'+
+  '<text x="30" y="150" class="lb" text-anchor="middle" transform="rotate(-90 30 150)">DEMAND →</text>'+
+  '<circle class="pop dot" style="--d:.25s" cx="250" cy="200" r="16"/><circle class="pop dot" style="--d:.3s" cx="310" cy="120" r="22"/>'+
+  '<circle class="pop dot" style="--d:.35s" cx="200" cy="225" r="10"/><circle class="pop dot" style="--d:.4s" cx="345" cy="175" r="13"/>'+
+  '<circle class="pop dot" style="--d:.45s" cx="170" cy="160" r="9"/><circle class="pop dot" style="--d:.5s" cx="275" cy="85" r="11"/>'+
+  '<path class="fi dash" style="--d:.9s" d="M118 98V250M60 98H118"/>'+
+  '<circle class="pop ring" style="--d:.7s" cx="118" cy="98" r="34"/>'+
+  '<circle class="pop hit" style="--d:.6s" cx="118" cy="98" r="20"/>'+
+  '<text x="160" y="72" class="tg fi" style="--d:1s">Opportunity</text><path class="fi lnk" style="--d:1s" d="M140 86L158 76"/>'+
+  '</svg>',
+  /* 1 account ops: health */
+  '<svg class="viz" viewBox="0 0 400 300" role="img" aria-label="Account health overview">'+
+  '<text x="24" y="32" class="lb">ACCOUNT HEALTH</text>'+
+  '<circle cx="112" cy="165" r="62" class="track"/>'+
+  '<circle cx="112" cy="165" r="62" class="gauge" pathLength="1" transform="rotate(-90 112 165)"/>'+
+  '<text x="112" y="162" class="big" text-anchor="middle">Healthy</text><text x="112" y="184" class="lb" text-anchor="middle">ALL METRICS</text>'+
+  '<g class="fi" style="--d:.2s"><text x="214" y="102" class="row">Orders</text><path class="ok dr" pathLength="1" style="--d:.5s" d="M356 96l6 6 12-13"/></g>'+
+  '<path class="gd" d="M214 118H376"/>'+
+  '<g class="fi" style="--d:.35s"><text x="214" y="148" class="row">Listings</text><path class="ok dr" pathLength="1" style="--d:.65s" d="M356 142l6 6 12-13"/></g>'+
+  '<path class="gd" d="M214 164H376"/>'+
+  '<g class="fi" style="--d:.5s"><text x="214" y="194" class="row">Policy</text><path class="ok dr" pathLength="1" style="--d:.8s" d="M356 188l6 6 12-13"/></g>'+
+  '<path class="gd" d="M214 210H376"/>'+
+  '<g class="fi" style="--d:.65s"><text x="214" y="240" class="row">Cases</text><rect x="290" y="226" width="86" height="22" rx="11" class="pill"/><text x="333" y="241" class="pt" text-anchor="middle">IN PROGRESS</text></g>'+
+  '</svg>',
+  /* 2 listing & content */
+  '<svg class="viz" viewBox="0 0 400 300" role="img" aria-label="Product listing layout">'+
+  '<text x="24" y="32" class="lb">PRODUCT PAGE</text>'+
+  '<rect x="24" y="50" width="150" height="210" rx="4" class="ph fi"/>'+
+  '<g class="fi" style="--d:.15s">'+(function(){var s='';for(var r=0;r<9;r++){for(var c=0;c<7;c++){var x=48+c*17,y=88+r*17,dx=(x-99)/52,dy=(y-156)/70,d=dx*dx+dy*dy;if(d<1){s+='<circle class="ht" cx="'+x+'" cy="'+y+'" r="'+(2+4.6*(1-d)).toFixed(1)+'"/>';}}}return s;})()+'</g>'+
+  '<rect class="gx bar ink" style="--d:.2s" x="196" y="56" width="180" height="12" rx="2"/>'+
+  '<rect class="gx bar ink" style="--d:.28s" x="196" y="76" width="132" height="12" rx="2"/>'+
+  '<g class="fi" style="--d:.45s">'+[0,1,2,3,4].map(function(i){var x=204+i*16;return '<path class="star" d="M'+x+' 98l2.4 5 5.4.6-4 3.7 1.1 5.3-4.9-2.7-4.9 2.7 1.1-5.3-4-3.7 5.4-.6z"/>';}).join('')+'</g>'+
+  [0,1,2,3].map(function(i){var y=136+i*22;return '<circle class="fi bul" style="--d:'+(.5+i*.08)+'s" cx="200" cy="'+(y+5)+'" r="3"/><rect class="gx bar" style="--d:'+(.5+i*.08)+'s" x="210" y="'+y+'" width="'+[166,140,154,118][i]+'" height="9" rx="2"/>';}).join('')+
+  '<rect class="fi btn" style="--d:.9s" x="196" y="232" width="180" height="30" rx="15"/><text class="fi bt" style="--d:.95s" x="286" y="251" text-anchor="middle">ADD TO CART</text>'+
+  '</svg>',
+  /* 3 advertising */
+  '<svg class="viz" viewBox="0 0 400 300" role="img" aria-label="Campaign cost compared with target">'+
+  '<text x="24" y="32" class="lb">CAMPAIGNS · COST VS TARGET</text>'+
+  '<path class="ax dr" pathLength="1" d="M40 250H380"/>'+
+  [[60,120],[112,95],[164,150],[216,82],[268,176],[320,104]].map(function(b,i){var over=b[1]>140;return '<rect class="gy '+(over?'warn':'ok-b')+'" style="--d:'+(.15+i*.08)+'s" x="'+b[0]+'" y="'+(250-b[1])+'" width="30" height="'+b[1]+'" rx="2"/><text class="lb fi" style="--d:.6s" x="'+(b[0]+15)+'" y="270" text-anchor="middle">C'+(i+1)+'</text>';}).join('')+
+  '<path class="fi target" style="--d:.8s" d="M40 110H380"/><text class="tg fi" style="--d:.9s" x="380" y="102" text-anchor="end">Target</text>'+
+  '<g class="fi" style="--d:1.1s"><path class="lnk" d="M179 70V96"/><text class="tg" x="179" y="62" text-anchor="middle">Adjust bid</text></g>'+
+  '</svg>',
+  /* 4 inventory */
+  '<svg class="viz" viewBox="0 0 400 300" role="img" aria-label="Stock level with reorder point and incoming shipment">'+
+  '<text x="24" y="32" class="lb">STOCK LEVEL · 12 WEEKS</text>'+
+  '<path class="gd" d="M40 100H380M40 150H380"/>'+
+  '<path class="ax dr" pathLength="1" d="M40 52V250H380"/>'+
+  '<path class="area fi" style="--d:.9s" d="M40 72L80 98L120 126L160 152L200 176L228 190L228 92L268 118L308 144L348 170L380 190V250H40Z"/>'+
+  '<path class="line dr" pathLength="1" style="--d:.2s" d="M40 72L80 98L120 126L160 152L200 176L228 190L228 92L268 118L308 144L348 170L380 190"/>'+
+  '<path class="fi target" style="--d:.7s" d="M40 196H380"/><text class="tg fi" style="--d:.8s" x="48" y="218">Reorder point</text>'+
+  '<g class="pop" style="--d:1.1s"><rect x="214" y="58" width="28" height="22" rx="2" class="box"/><path class="boxl" d="M214 66H242M228 58V66"/></g>'+
+  '<text class="tg fi" style="--d:1.2s" x="250" y="74">Shipment in</text><path class="fi lnk" style="--d:1.2s" d="M228 82V90"/>'+
+  '</svg>',
+  /* 5 reporting: P&L waterfall */
+  '<svg class="viz" viewBox="0 0 400 300" role="img" aria-label="Profit and loss waterfall by product">'+
+  '<text x="24" y="32" class="lb">WEEKLY P&amp;L · ONE PRODUCT</text>'+
+  '<path class="ax dr" pathLength="1" d="M30 250H380"/>'+
+  '<rect class="gy ink" style="--d:.1s" x="44" y="66" width="48" height="184" rx="2"/>'+
+  '<rect class="gy warn" style="--d:.3s" x="112" y="66" width="48" height="44" rx="2"/>'+
+  '<rect class="gy warn" style="--d:.45s" x="180" y="110" width="48" height="38" rx="2"/>'+
+  '<rect class="gy warn" style="--d:.6s" x="248" y="148" width="48" height="52" rx="2"/>'+
+  '<rect class="gy ok-b" style="--d:.8s" x="316" y="200" width="48" height="50" rx="2"/>'+
+  '<path class="fi dash" style="--d:.9s" d="M92 66H112M160 110H180M228 148H248M296 200H316"/>'+
+  ['Sales','Fees','Ads','COGS','Profit'].map(function(t,i){return '<text class="lb fi" style="--d:.7s" x="'+(68+i*68)+'" y="270" text-anchor="middle">'+t.toUpperCase()+'</text>';}).join('')+
+  '</svg>'
+  ];
 
-    const draw = (t) => {
-      const live = document.querySelector("canvas[data-globe]");
-      if (live && live !== canvas) {
-        canvas = live;
-        ctx = canvas.getContext("2d");
-        path.context(ctx);
-        ocean = makeOcean();
-      }
-      const lambda = (t / 1000) * 8 - 60;
-      projection.rotate([lambda, -14]);
-      ctx.clearRect(0, 0, S, S);
+  var svc=document.getElementById('svc');
+  svc.querySelectorAll('li').forEach(function(li){
+    var t=document.createElement('div'); t.className='thumb'; t.setAttribute('aria-hidden','true');
+    t.innerHTML=VIZ[+li.dataset.v]; li.appendChild(t);
+  });
 
-      ctx.beginPath(); path({ type: "Sphere" }); ctx.fillStyle = ocean; ctx.fill();
+  /* ---------- Da Nang word ---------- */
+  var pw=document.getElementById('placeWord');
+  var dimg=new Image(); dimg.onload=function(){pw.style.backgroundImage='url('+DANANG+')';pw.classList.add('has-img');}; dimg.src=DANANG;
 
-      ctx.beginPath(); path(graticule);
-      ctx.strokeStyle = "rgba(228,245,244,0.16)"; ctx.lineWidth = 1.4; ctx.stroke();
+  /* ---------- halftone globe ---------- */
+  startGlobe();
+  /* ---------- dot field ---------- */
+  startField(!reduce);
 
-      if (land) {
-        ctx.beginPath(); path(land);
-        ctx.fillStyle = "rgba(23,169,169,0.85)"; ctx.fill();
-        ctx.strokeStyle = "rgba(228,245,244,0.35)"; ctx.lineWidth = 1.2; ctx.stroke();
-      }
-
-      ctx.beginPath(); path({ type: "Sphere" });
-      ctx.strokeStyle = "rgba(228,245,244,0.4)"; ctx.lineWidth = 2; ctx.stroke();
-
-      const center = projection.invert([R, R]);
-      const pulse = 1 + 0.55 * Math.sin(t / 420);
-      sites.forEach((s, i) => {
-        if (d3.geoDistance(s.coord, center) > Math.PI / 2) return;
-        const p = projection(s.coord);
-        if (!p) return;
-        const r = 8 * (i === 0 ? pulse : 2 - pulse);
-        ctx.beginPath(); ctx.arc(p[0], p[1], r * 2.6, 0, Math.PI * 2);
-        ctx.fillStyle = s.color + "33"; ctx.fill();
-        ctx.beginPath(); ctx.arc(p[0], p[1], 9, 0, Math.PI * 2);
-        ctx.fillStyle = s.color; ctx.fill();
-        ctx.font = "700 22px Outfit, sans-serif";
-        ctx.fillStyle = s.text;
-        ctx.fillText(s.label[window.sglLang] || s.label.en, p[0] + 18, p[1] + 8);
-      });
-
-    };
-    setInterval(() => {
-      try { draw(performance.now()); } catch (e) {}
-    }, 40);
-    return true;
+  if(!hasG||reduce){
+    document.querySelectorAll('.statement .w').forEach(function(w){w.style.opacity=1;});
+    document.querySelectorAll('.step').forEach(function(st){st.classList.add('on');});
+    return;
   }
-  if (!startGlobe()) { var p = setInterval(function () { if (startGlobe()) clearInterval(p); }, 220); }
+  gsap.registerPlugin(ScrollTrigger);
+  var EASE='expo.out';
+
+  /* 01 hero lines */
+  function playHero(){
+    var lines=document.querySelectorAll('[data-lang="'+root.getAttribute('data-lang')+'"] .h1[data-t="'+root.getAttribute('data-lang')+'"] .ln>span');
+    gsap.fromTo(lines,{yPercent:115,rotate:2.5},{yPercent:0,rotate:0,duration:1.4,ease:EASE,stagger:.09,delay:.1});
+  }
+  playHero();
+  onLang.push(function(){playHero(); requestAnimationFrame(function(){ScrollTrigger.refresh();});});
+  gsap.from('.hero-sub > *, .clocks',{y:24,opacity:0,duration:1.2,ease:EASE,stagger:.1,delay:.5});
+
+  /* 06 velocity marquee */
+  var x=0,dir=1,boost=0;
+  ScrollTrigger.create({start:0,end:'max',onUpdate:function(s){var v=s.getVelocity();dir=v<0?-1:1;boost=Math.min(Math.abs(v)/110,16);}});
+  gsap.ticker.add(function(t,dt){
+    var half=mq.scrollWidth/2; x-=(0.7+boost)*dir*(dt/16.7);
+    if(half){x=((x%half)-half)%half;}
+    mq.style.transform='translate3d('+x+'px,0,0)'; boost*=0.93;
+  });
+
+  /* 02 words */
+  document.querySelectorAll('.words').forEach(function(p){
+    gsap.to(p.querySelectorAll('.w'),{opacity:1,ease:'none',stagger:.1,scrollTrigger:{trigger:p.parentNode,start:'top 72%',end:'bottom 55%',scrub:true}});
+  });
+
+  /* 04 team photo */
+  gsap.fromTo('#phA',{clipPath:'inset(12% 10% 12% 10%)'},{clipPath:'inset(0% 0% 0% 0%)',ease:'none',scrollTrigger:{trigger:'#phA',start:'top 90%',end:'center 55%',scrub:true}});
+  gsap.fromTo('#phA img',{scale:1.2,yPercent:-4},{scale:1,yPercent:4,ease:'none',scrollTrigger:{trigger:'#phA',start:'top bottom',end:'bottom top',scrub:true}});
+  gsap.fromTo('.ph-b img',{yPercent:-8},{yPercent:8,ease:'none',scrollTrigger:{trigger:'.ph-b',start:'top bottom',end:'bottom top',scrub:true}});
+
+  /* section heads rise */
+  gsap.utils.toArray('.sec-head h2, .careers-grid h2, .contact h2, .data-top h2').forEach(function(h){
+    gsap.from(h,{y:40,opacity:0,duration:1.2,ease:EASE,scrollTrigger:{trigger:h,start:'top 88%',once:true}});
+  });
+
+  /* 17 services hover image */
+  (function(){
+    var sec=document.getElementById('services'), fl=document.getElementById('float'), cur=-1;
+    var qx=gsap.quickTo(fl,'x',{duration:.6,ease:'power3'}), qy=gsap.quickTo(fl,'y',{duration:.6,ease:'power3'}), shown=false;
+    sec.addEventListener('pointermove',function(e){var r=sec.getBoundingClientRect();qx(e.clientX-r.left+28);qy(e.clientY-r.top-fl.offsetHeight/2);});
+    svc.querySelectorAll('li').forEach(function(li){
+      li.addEventListener('pointerenter',function(e){
+        if(e.pointerType!=='mouse') return;
+        var v=+li.dataset.v; if(v!==cur){fl.innerHTML=VIZ[v];cur=v;gsap.fromTo(fl,{rotate:-2},{rotate:0,duration:.8,ease:EASE});}
+        if(!shown){gsap.to(fl,{opacity:1,scale:1,duration:.5,ease:EASE});shown=true;}
+      });
+    });
+    svc.addEventListener('pointerleave',function(){gsap.to(fl,{opacity:0,scale:.7,duration:.4,ease:'power2.in'});shown=false;cur=-1;});
+    gsap.from('#svc li',{y:30,opacity:0,duration:1,ease:EASE,stagger:.07,scrollTrigger:{trigger:'#svc',start:'top 82%',once:true}});
+  })();
+
+  /* 03 horizontal approach */
+  (function(){
+    var track=document.getElementById('htrack'), pin=document.getElementById('hpin');
+    var dist=function(){return Math.max(0,track.scrollWidth-pin.clientWidth);};
+    gsap.to(track,{x:function(){return -dist();},ease:'none',scrollTrigger:{trigger:pin,start:'top top',end:function(){return '+='+dist();},pin:true,scrub:.6,invalidateOnRefresh:true,
+      onUpdate:function(s){gsap.set('#hbar',{scaleX:s.progress});}}});
+  })();
+
+  /* step icons draw when visible */
+  (function(){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.55});
+    document.querySelectorAll('.step').forEach(function(st){io.observe(st);});
+  })();
+
+  /* 18 Da Nang word */
+  gsap.fromTo(pw,{backgroundPosition:'0% 55%',letterSpacing:'0.01em'},{backgroundPosition:'100% 55%',letterSpacing:'-0.055em',ease:'none',scrollTrigger:{trigger:'.place',start:'top bottom',end:'bottom top',scrub:true}});
+
+  window.addEventListener('load',function(){ScrollTrigger.refresh();});
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){ScrollTrigger.refresh();});
+
+  /* ================= helpers ================= */
+  function startGlobe(){
+    var cv=document.getElementById('globe'); if(!cv||!window.d3) return;
+    var ctx=cv.getContext('2d'), S=0, dpr=1, R=0, pts=[], landReady=false, running=false;
+    var proj=d3.geoOrthographic().clipAngle(90).precision(.5);
+    var VN=[108.2,16.05], US=[-96,38.5];
+    var route=d3.geoInterpolate(VN,US);
+    function size(){dpr=Math.min(window.devicePixelRatio||1,2);S=cv.clientWidth;cv.width=S*dpr;cv.height=S*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);R=S/2*0.84;proj.translate([S/2,S/2]).scale(R);}
+    // Fibonacci sphere sample
+    var N=4200, all=[];
+    for(var i=0;i<N;i++){var y=1-(i/(N-1))*2, r=Math.sqrt(1-y*y), th=i*2.399963229728653; var lat=Math.asin(y)*180/Math.PI, lon=((Math.atan2(Math.sin(th)*r,Math.cos(th)*r)*180/Math.PI)); all.push({c:[lon,lat],land:false});}
+    fetch('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/land-110m.json').then(function(r){return r.json();}).then(function(topo){
+      var land=topojson.feature(topo,topo.objects.land);
+      var W=720,H=360,oc=document.createElement('canvas');oc.width=W;oc.height=H;var o=oc.getContext('2d');
+      var eq=d3.geoEquirectangular().scale(W/(2*Math.PI)).translate([W/2,H/2]);
+      o.fillStyle='#000';o.beginPath();d3.geoPath(eq,o)(land);o.fill();
+      var data=o.getImageData(0,0,W,H).data;
+      all.forEach(function(p){var px=Math.floor((p.c[0]+180)/360*W),py=Math.floor((90-p.c[1])/180*H);px=Math.min(W-1,Math.max(0,px));py=Math.min(H-1,Math.max(0,py));p.land=data[(py*W+px)*4+3]>128;});
+      landReady=true;
+    }).catch(function(){});
+    var t0=performance.now();
+    function draw(now){
+      var t=(now-t0)/1000;
+      var lam=reduce?174:(174+38*Math.sin(t*0.12));
+      proj.rotate([lam,-24,0]);
+      ctx.clearRect(0,0,S,S);
+      var center=[-lam,24];
+      for(var i=0;i<all.length;i++){
+        var p=all[i], d=d3.geoDistance(p.c,center); if(d>Math.PI/2) continue;
+        var xy=proj(p.c); if(!xy) continue;
+        var f=Math.cos(d);
+        var rad=(p.land&&landReady)?(1.1+2.2*f):(0.6+0.9*f);
+        ctx.globalAlpha=(p.land&&landReady)?(0.35+0.65*f):(0.10+0.18*f);
+        ctx.fillStyle='#0E1A2B';
+        ctx.beginPath();ctx.arc(xy[0],xy[1],rad*(S/520),0,6.2832);ctx.fill();
+      }
+      ctx.globalAlpha=1;
+      // route
+      var prog=reduce?1:((t*0.22)%1.4); prog=Math.min(1,prog);
+      ctx.strokeStyle='#F5821F';ctx.lineWidth=2.2*(S/520);ctx.beginPath();var started=false;
+      for(var s=0;s<=60;s++){var k=s/60*prog, q=route(k); var dd=d3.geoDistance(q,center); var pp=proj(q); if(dd>Math.PI/2||!pp){started=false;continue;}
+        // lift arc above surface
+        var lift=1+0.14*Math.sin(Math.PI*k); var cx=S/2+(pp[0]-S/2)*lift, cy=S/2+(pp[1]-S/2)*lift;
+        if(!started){ctx.moveTo(cx,cy);started=true;}else ctx.lineTo(cx,cy);}
+      ctx.stroke();
+      [[VN,'#1B75BC',window.sglLang==='vi'?'ĐÀ NẴNG':'DA NANG'],[US,'#F5821F','USA']].forEach(function(m){
+        var dd=d3.geoDistance(m[0],center); if(dd>Math.PI/2) return; var pp=proj(m[0]);
+        var pulse=reduce?0:(Math.sin(t*3)+1)/2;
+        ctx.fillStyle=m[1];ctx.globalAlpha=.18;ctx.beginPath();ctx.arc(pp[0],pp[1],(10+10*pulse)*(S/520),0,6.2832);ctx.fill();
+        ctx.globalAlpha=1;ctx.beginPath();ctx.arc(pp[0],pp[1],5.5*(S/520),0,6.2832);ctx.fill();
+        ctx.font='500 '+Math.round(12*(S/520)+1)+'px "JetBrains Mono", monospace';ctx.fillStyle='#0E1A2B';ctx.fillText(m[2],pp[0]+12*(S/520),pp[1]+4);
+      });
+      if(running&&!reduce) requestAnimationFrame(draw);
+    }
+    size(); new ResizeObserver(function(){size();if(!running)requestAnimationFrame(draw);}).observe(cv);
+    new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&!running){running=true;requestAnimationFrame(draw);}else if(!e.isIntersecting){running=false;}});}).observe(cv);
+    if(reduce){var iv=setInterval(function(){draw(performance.now());if(landReady)clearInterval(iv);},300);}
+  }
+
+  function startField(animate){
+    var box=document.getElementById('field'), cv=document.getElementById('fieldc'), ctx=cv.getContext('2d');
+    var W=0,H=0,dpr=1,pts=[],mx=-9999,my=-9999,running=false;
+    function size(){dpr=Math.min(window.devicePixelRatio||1,2);W=box.clientWidth;H=box.clientHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+      var g=W<600?20:24;pts=[];for(var y=g/2;y<H;y+=g)for(var x=g/2;x<W;x+=g)pts.push({ox:x,oy:y,x:x,y:y});draw(0);}
+    function draw(t){
+      ctx.clearRect(0,0,W,H);
+      for(var i=0;i<pts.length;i++){var p=pts[i];
+        var wave=animate?Math.sin(p.ox*.011+t*.001)*Math.cos(p.oy*.015+t*.0007)*5:0;
+        var tx=p.ox,ty=p.oy+wave,dx=p.ox-mx,dy=p.oy-my,d=Math.sqrt(dx*dx+dy*dy),Rr=140,near=0;
+        if(d<Rr){near=1-d/Rr;var f=near*near*36;tx+=dx/(d||1)*f;ty+=dy/(d||1)*f;}
+        p.x+=(tx-p.x)*.14;p.y+=(ty-p.y)*.14;
+        ctx.globalAlpha=.34+near*.66;ctx.fillStyle=near>.05?'#1B75BC':'#0E1A2B';
+        ctx.beginPath();ctx.arc(p.x,p.y,1.5+near*2.6,0,6.2832);ctx.fill();}
+      ctx.globalAlpha=1;
+    }
+    function loop(t){if(!running)return;draw(t);requestAnimationFrame(loop);}
+    function setPt(e){var r=box.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top;if(!animate)draw(0);}
+    box.addEventListener('pointermove',setPt);box.addEventListener('pointerdown',setPt);
+    box.addEventListener('pointerleave',function(){mx=-9999;my=-9999;});
+    new ResizeObserver(size).observe(box);
+    if(animate) new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&!running){running=true;requestAnimationFrame(loop);}else if(!e.isIntersecting)running=false;});}).observe(box);
+  }
 })();
 </script>
 </body>
